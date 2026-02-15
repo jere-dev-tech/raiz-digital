@@ -1,0 +1,1 @@
+import"../main-119bb667.js";/* empty css                  */document.addEventListener("DOMContentLoaded",function(){particlesJS("particles-js",{particles:{number:{value:40},size:{value:3},move:{enable:!0,speed:2},line_linked:{enable:!0,distance:150,opacity:.5,color:"#10b981"},color:{value:"#10b981"}},interactivity:{events:{onhover:{enable:!0,mode:"repulse"}}}})});

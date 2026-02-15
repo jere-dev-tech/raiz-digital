@@ -1,24 +1,218 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth" data-mode="light" dir="ltr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Raíz Digital</title>
+  <head>
+    <meta charset="utf-8" />
+<title>Index | NexIT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta content="IT Service" name="description" />
+<meta content="override" name="NexIT" />
+<!-- favicon -->
+<link rel="shortcut icon" href="./assets/favicon-1549f672.svg" />
 
-  <!-- CSS principal -->
-  <link rel="stylesheet" href="assets/css/style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" />
 
-  <!-- Iconos -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
-    rel="stylesheet"
-  />
-</head>
+<!-- swiper  -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+<!-- aos  -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+<!-- glight  -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+
+ <!-- icon css -->
+
+
+<!-- Tailwind CSS -->
+
+    <script type="module" crossorigin src="./assets/src\\index-ed6a8bff.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/main-119bb667.js">
+    <link rel="stylesheet" href="./assets/main-390daa27.css">
+    <link rel="stylesheet" href="./assets/tailwind-a85738c2.css">
+  </head>
 
  <body>
 
+    <header class="overflow-x-hidden w-full">
+  <nav
+    data-aos="fade-down"
+    data-aos-duration="700"
+    id="mainNav"
+    class="left-0 right-0 fixed top-0 z-20 w-full bg-[#000000] bg-opacity-0   "
+  >
+    <div
+      id="siteHeader"
+      class="flex py-0 lg:py-0 justify-between items-center container w-full"
+    >
+      <a href="index.html">
+        <img
+          class="w-[198px] max-w-full"
+          src="./assets/Logo-d1156617.png"
+          alt="logo"
+        />
+      </a>
 
+      <ul class="hidden lg:flex justify-center gap-[30px] items-center">
+        <li class="relative group">
+          <div class="flex py-[38px] items-center justify-center gap-[5px] cursor-pointer">
+            <a href="index.html" class="capitalize text-body2 font-normal text-secondary-white group-hover:text-primary-light transition-all duration-300 ease-in-out">Home</a>
+          </div>
+        </li>
+        <li class="relative group">
+          <div class="flex py-[38px] items-center justify-center gap-[5px] cursor-pointer">
+            <a href="#" class="capitalize text-body2 font-normal text-secondary-white group-hover:text-primary-light transition-all duration-300 ease-in-out">Servicios</a>
+            <i class="ri-arrow-down-s-line capitalize text-body2 text-secondary-white group-hover:text-primary-light transition-all duration-300 ease-in-out"></i>
+          </div>
+          <ul class="absolute left-0 w-[180px] bg-primary-light shadow-lg max-h-0 overflow-hidden transition-all duration-700 ease-in-out group-hover:max-h-[500px]">
+            <li class="py-[10px] px-5 bg-secondary-white hover:bg-secondary-black text-secondary-black hover:text-secondary-white border-b border-secondary-black transition-all duration-300 ease-linear">
+              <a class="block font-normal text-body2 nav-link" href="service.html">Servicios</a>
+            </li>
+            <li class="py-[10px] px-5 bg-secondary-white hover:bg-secondary-black text-secondary-black hover:text-secondary-white border-b border-secondary-black transition-all duration-300 ease-linear">
+              <a class="block font-normal text-body2 nav-link" href="serviceDetail.html">Detalle de servicio</a>
+            </li>
+          </ul>
+        </li>
+        <li class="relative group">
+          <div class="inline-flex py-[38px]">
+            <a href="index.html#precios" class="capitalize text-body2 font-normal text-secondary-white group-hover:text-primary-light transition-all duration-300 ease-in-out">Precios</a>
+          </div>
+        </li>
+        <li class="relative group">
+          <div class="inline-flex py-[38px]">
+            <a href="protfolio.html" class="capitalize text-body2 font-normal text-secondary-white group-hover:text-primary-light transition-all duration-300 ease-in-out">Portfolio</a>
+          </div>
+        </li>
+        <li class="relative group">
+          <div class="inline-flex py-[38px]">
+            <a href="abouts.html" class="capitalize text-body2 font-normal text-secondary-white group-hover:text-primary-light transition-all duration-300 ease-in-out">Sobre mí</a>
+          </div>
+        </li>
+        <!-- Botón blanco Contacto eliminado -->
+      </ul>
+
+      <div class="flex justify-end gap-[10px]">
+        <div class="hidden xl:inline-flex justify-end items-center gap-[10px]">
+        <i class="ri-phone-fill text-[22px] leading-[23px] p-[10px] rounded-[70px] bg-primary-dark text-secondary-white "></i>   
+        <div class="">
+          <p class="text-body3 text-secondary-white">Call Us</p>
+          <p class="text-body1 text-secondary-white">+(321) 9124244559</p>
+        </div>       
+        </div>
+
+        <button id="menu-toggle" class="block lg:hidden">
+          <i
+            id="menu-icon"
+            class="text-[25px] text-secondary-white font-semibold ri-menu-3-line"
+          ></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- <div
+    id="overlay"
+    class="fixed inset-0 bg-primary-dark bg-opacity-70 z-[998] hidden"
+  ></div> -->
+
+  <div
+    id="mobile-menu"
+    class="lg:hidden fixed top-0 right-0 w-[100%] sm:w-[50%] h-screen bg-secondary-dark  z-[999] px-6 py-10 transition-transform duration-300 ease-linear transform translate-x-full overflow-x-hidden"
+  >
+    <div class="flex flex-col gap-10">
+      <div class="flex justify-between items-center">
+        <img
+          src="../assets/images/Logo.png"
+          alt="logo"
+          class="w-[198px]   "
+        />
+        <i
+          id="close-icon"
+          class="text-[28px] text-secondary-white block font-semibold ri-close-line text-right"
+        ></i>
+      </div>
+      <div class="relative flex flex-col items-center gap-[10px]">
+        <!-- Nuevo menú móvil igual al navbar de escritorio -->
+        <div class="relative w-full">
+          <a href="index.html" class="flex justify-start items-center pb-2 transition-all duration-300 ease-in text-body1 font-normal text-secondary-white border-b border-secondary-white w-full">Home</a>
+        </div>
+        <div class="relative w-full">
+          <div class="pb-2 dropdown-btn flex group justify-between items-center border-b border-secondary-white">
+            <button class="flex justify-start items-center transition-all duration-300 ease-in text-body1 font-normal text-secondary-white w-full">Servicios</button>
+            <i class="ri-add-line text-body1 text-secondary-white font-semibold"></i>
+          </div>
+          <div class="max-h-0 overflow-hidden flex flex-col gap-2 py-0 opacity-0 pl-4 transform -translate-y-4 transition-all duration-300 ease-in-out">
+            <a href="service.html" class="block pb-2 text-body1 font-normal text-secondary-white border-b border-secondary-white">Servicios</a>
+            <a href="serviceDetail.html" class="block pb-2 text-body1 font-normal text-secondary-white border-b border-secondary-white">Detalle de servicio</a>
+          </div>
+        </div>
+        <div class="relative w-full">
+          <a href="index.html#precios" class="flex justify-start items-center pb-2 transition-all duration-300 ease-in text-body1 font-normal text-secondary-white border-b border-secondary-white w-full">Precios</a>
+        </div>
+        <div class="relative w-full">
+          <a href="protfolio.html" class="flex justify-start items-center pb-2 transition-all duration-300 ease-in text-body1 font-normal text-secondary-white border-b border-secondary-white w-full">Portfolio</a>
+        </div>
+        <div class="relative w-full">
+          <a href="abouts.html" class="flex justify-start items-center pb-2 transition-all duration-300 ease-in text-body1 font-normal text-secondary-white border-b border-secondary-white w-full">Sobre mí</a>
+        </div>
+        <div class="relative w-full">
+          <a href="contact.html" class="flex justify-start items-center pb-2 transition-all duration-300 ease-in text-body1 font-normal text-secondary-white border-b border-secondary-white w-full">Contacto</a>
+        </div>
+        <div data-aos="fade-up" class="flex justify-start items-center mt-2 sm:mt-5 xl:mt-[50px]">
+          <a href="contact.html" class="flex justify-center items-center gap-[10px] theme-btn2 relative py-2 xl:py-[10px] px-5 xl:px-[22px] rounded-[30px] text-primary-dark transition-all duration-500 ease-linear bg-secondary-white w-full">
+            <p class="text-body3 md:text-body2 xl:text-body1 font-medium">Contacto</p>
+            <svg class="w-[14px] md:w-[16px] xl:w-[18px] h-[14px] md:h-[16px] xl:h-[18px]" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.682724 4.97469C2.08646 2.21852 4.98256 0.284124 8.0528 0.0519076C8.38097 0.0271321 8.69909 0.00392863 8.7598 0.000397033C8.82051 -0.00313456 9.17517 0.0172919 9.54793 0.0458163C13.9025 0.379199 17.3318 3.58904 17.9531 7.91329C18.0498 8.58658 17.9895 10.1486 17.8404 10.8308C17.5793 12.0257 17.0025 13.3252 16.3091 14.2809C15.8282 14.9438 14.8652 15.891 14.1961 16.3593C13.2031 17.0544 11.9161 17.607 10.6639 17.8762C10.1548 17.9856 9.93361 18.0006 8.84258 18C7.67617 17.9993 7.56083 17.99 6.94285 17.8467C5.06927 17.4124 3.71697 16.6811 2.41109 15.396C1.38724 14.3886 0.745634 13.418 0.273141 12.1619C0.166346 11.878 0.0619137 11.5662 0.0409961 11.4689L0.00303078 11.2919L4.29863 11.3059L8.59423 11.3198L8.62182 13.3844L8.64942 15.449L11.8919 12.2617C13.6753 10.5086 15.1344 9.05379 15.1344 9.02874C15.1344 9.00364 13.6691 7.54079 11.8781 5.77787L8.62182 2.5726V4.65064V6.72869H4.31095H0L0.0379654 6.57928C0.11424 6.27931 0.472886 5.38674 0.682724 4.97469Z" class="fill-primary-dark"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const currentPage = window.location.pathname.split("/").pop();
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    navLinks.forEach((link) => {
+      const linkPage = link.getAttribute("href");
+
+      if (linkPage === currentPage) {
+        // Add active styles
+        link.classList.add("text-primary-dark");
+      }
+    });
+  });
+
+
+  window.addEventListener("scroll", function () {
+  const nav = document.getElementById("mainNav");
+
+  if (window.scrollY > 400) {
+    nav.classList.add("bg-opacity-100");
+  } else {
+    nav.classList.remove("bg-opacity-100");
+  }
+});
+</script>
+ <div
+  class="loader fixed top-0 left-0 w-full h-full flex items-center justify-center z-[900] bg-secondary-black bg-opacity-60 backdrop-blur-xl  overflow-hidden   ">
+
+<!-- From Uiverse.io by Z4drus --> 
+<div class="container-loader">
+  <div class="slice"></div>
+  <div class="slice"></div>
+  <div class="slice"></div>
+  <div class="slice"></div>
+  <div class="slice"></div>
+  <div class="slice"></div>
+</div>
+
+
+</div>
 
     <div class="relative">
 
@@ -41,7 +235,7 @@
                   data-aos="fade-up"
                   class="flex justify-center lg:justify-start items-center gap-[5px]"
                 >
-                  <img src="assets/images/subicon2.svg" alt="icon" />
+                  <img src="./assets/subicon2-aff9201b.svg" alt="icon" />
                   <p class="text-body2 sm:text-body1 text-primary-light">Bienvenido a Raíz Digital</p>
                 </div>
                 <h1
@@ -96,7 +290,7 @@
               </div>
             </div>
             <div       data-aos="zoom-in"   > 
-              <img src="assets/images/robot.png" alt="robot" class="w-[288px] sm:w-[70%] lg:w-full mx-auto lg:mx-o" />
+              <img src="./assets/robot-05b5ed4f.png" alt="robot" class="w-[288px] sm:w-[70%] lg:w-full mx-auto lg:mx-o" />
             </div>
           </div>
 
@@ -115,7 +309,7 @@
           data-aos="fade-up"
           class="flex justify-center items-center gap-[5px]"
         >
-          <img src="assets/images/subIcon.svg" alt="icon" />
+          <img src="./assets/subIcon-d00251e3.svg" alt="icon" />
           <p class="text-body1 text-primary-dark">Nuestros servicios</p>
         </div>
         <div class="">
@@ -301,13 +495,273 @@
 </div>
     </div>
 
-    {{> partials/about}} {{> partials/choose}}
+    <div
+  class="container grid grid-cols-1 xl:grid-cols-2 items-start gap-10 pt-[70px] md:pt-[80px] xl:pt-[100px] overflow-hidden"
+>
+  <div class="pr-5 sm:pr-[100px] relative w-[288px] sm:w-[600px] xl:w-full">
+    <div data-tilt class="relative z-[2]">
+      <img
+        data-aos="zoom-in"
+        src="../assets/images/about.png"
+        alt="about"
+        class="w-full"
+      />
+    </div>
+
+    <img
+      data-aos="zoom-in"
+      src="../assets/images/aboutVectore.png"
+      alt="vector"
+      class="absolute right-0 top-[30px]"
+    />
+
+    <a href="https://www.youtube.com/watch?v=0x5mf8BUJZY" class="glightbox">
+      <div class="text-center rounded">
+        <img
+          data-aos="zoom-in"
+          src="../assets/images/videobtn.svg"
+          alt="videoBtn"
+          class="size-[50px] sm:size-[60px] bottom-5 right-0 sm:right-[70px] absolute z-[3]"
+        />
+      </div>
+    </a>
+  </div>
+
+  <div class="flex flex-col gap-5">
+    <div class="flex flex-col gap-[10px]">
+      <div data-aos="fade-up" class="flex justify-start items-center gap-[5px]">
+        <img src="./assets/subIcon-d00251e3.svg" alt="icon" />
+        <p class="text-body1 text-primary-dark">Sobre nosotros</p>
+      </div>
+      <div class="">
+        <h2
+          class="headline text-[28px] sm:text-[36px] md:text-[40px] xl:text-[44px] leading-10 sm:leading-[46px] md:leading-[50px] xl:leading-[56px] font-bold text-secondary-black"
+        >
+          Potenciando negocios con soluciones tecnológicas
+        </h2>
+      </div>
+      <p
+        data-aos="fade-left"
+        class="text-body2 sm:text-body1 text-secondary-black"
+      >
+        Brindamos soluciones digitales y desarrollo web para ayudar a negocios y emprendedores a crecer en internet y conseguir más clientes.
+      </p>
+    </div>
+
+    <div class="flex flex-col gap-5">
+      <div
+        data-aos="fade-left"
+        class="flex flex-col sm:flex-row justify-start items-start gap-2 sm:gap-[15px] group"
+      >
+        <svg
+          class="group-hover:-translate-y-3 transition-all duration-500 ease-linear"
+          width="50"
+          height="50"
+          viewBox="0 0 50 50"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="50" height="50" rx="25" fill="#5F2DEE" />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M24.0051 10.0303C16.837 10.4909 11.0294 15.9592 10.0961 23.1267C9.98211 24.0023 9.96666 25.7776 10.0652 26.685C10.4381 30.1203 12.0926 33.48 14.5822 35.8577C16.8284 38.0029 19.607 39.3837 22.6972 39.8903C23.2011 39.9729 23.7635 39.9997 24.9988 40C26.4174 40.0003 26.748 39.9808 27.499 39.8519C31.6118 39.146 35.2078 36.8104 37.532 33.3357C38.1346 32.4349 38.8958 30.8676 39.246 29.8065C39.7981 28.1342 39.9969 26.8778 39.9987 25.0505C40.0009 22.9113 39.7269 21.4355 38.9613 19.4631C38.6741 18.7231 38.5062 18.5551 38.0543 18.5546C37.8589 18.5545 37.7621 18.5998 37.5895 18.7724C37.298 19.0641 37.2981 19.362 37.59 20.1057C38.9729 23.6294 38.8076 27.6052 37.138 30.976C35.1327 35.0244 31.2892 37.7984 26.7938 38.4419C25.9241 38.5664 23.7977 38.5484 22.9821 38.4096C20.5592 37.9974 18.4042 37.0519 16.6096 35.6134C15.8436 34.9994 14.6994 33.8288 14.181 33.1286C12.1616 30.4019 11.2144 27.023 11.5411 23.7118C11.959 19.477 14.3488 15.6875 18.0113 13.452C21.5486 11.2931 25.8961 10.9061 29.8533 12.3977C30.2282 12.5391 30.6448 12.6547 30.7789 12.6547C31.2971 12.6547 31.6305 12.0539 31.3806 11.5705C31.2519 11.3217 30.8354 11.1199 29.6683 10.7412C27.8613 10.1548 25.8999 9.90857 24.0051 10.0303ZM32.3552 13.0875C29.7525 15.6884 29.2803 16.1882 29.2204 16.4061C29.1733 16.5774 29.1616 17.1741 29.185 18.2017L29.22 19.7407L26.7842 22.1825C24.5291 24.4432 24.3459 24.6433 24.314 24.8814C24.2672 25.2301 24.426 25.5257 24.7275 25.6518C25.2342 25.8635 25.1886 25.8988 27.8602 23.227L30.3091 20.7781L31.8472 20.8201C32.6931 20.8432 33.4816 20.8442 33.5994 20.8224C33.7756 20.7897 34.3631 20.2344 36.9068 17.6965L40 14.6103V14.2881C40 14.0998 39.9584 13.9063 39.8999 13.8229C39.6847 13.5154 39.5298 13.4883 37.9838 13.4883H36.5382V12.0755C36.5382 10.5582 36.5003 10.3333 36.2101 10.1301C36.1205 10.0672 35.9329 10.0255 35.7402 10.0255H35.4194L32.3552 13.0875ZM35.0573 13.7352L35.0637 14.5272L35.2817 14.7452L35.4996 14.9633H36.4833H37.467L35.2881 17.1436L33.1091 19.3239H31.9068H30.7044V18.1219V16.9199L32.836 14.7866C34.7253 12.8958 34.9723 12.6698 35.0092 12.7983C35.0322 12.878 35.0538 13.2997 35.0573 13.7352ZM23.7166 14.6245C23.1754 14.686 22.2041 14.9167 21.5978 15.1278C18.0837 16.3514 15.5101 19.2621 14.7408 22.883C14.5646 23.7122 14.4991 25.4617 14.6107 26.3564C15.1736 30.8687 18.6088 34.478 23.1566 35.3354C24.0772 35.509 26.0221 35.4927 26.9704 35.3034C29.1857 34.8612 31.054 33.8298 32.6122 32.1888C33.9731 30.7557 34.811 29.1208 35.2654 27.0115C35.5391 25.7411 35.4346 23.0065 35.0925 22.4842C34.8615 22.1316 34.2621 22.063 33.9854 22.3576C33.7315 22.628 33.6996 22.844 33.8212 23.4683C33.9742 24.2544 33.9743 25.8238 33.8214 26.6C33.0909 30.3078 30.3964 33.044 26.7043 33.8272C25.8376 34.011 24.2713 34.0258 23.4304 33.858C21.5685 33.4863 19.9682 32.6402 18.6802 31.3464C17.3816 30.0418 16.5415 28.4496 16.1757 26.6C16.004 25.7317 16.0214 24.114 16.2114 23.275C16.6381 21.3911 17.3896 20.0019 18.6802 18.7108C19.983 17.4077 21.4796 16.6023 23.332 16.2074C24.0625 16.0517 25.828 16.047 26.5772 16.1987C27.43 16.3714 27.8195 16.165 27.8195 15.5404C27.8195 15.1798 27.6609 14.9412 27.3537 14.8403C26.7204 14.632 24.7039 14.5124 23.7166 14.6245ZM24.1333 19.6067C21.2858 20.0826 19.3517 22.4846 19.507 25.3519C19.5593 26.3165 19.7911 27.0972 20.2641 27.9016C20.5947 28.4637 21.6027 29.448 22.2101 29.8017C24.9945 31.4231 28.627 30.2893 29.9694 27.3797C30.5337 26.1567 30.6406 24.5702 30.2389 23.3818C30.0692 22.8794 29.8772 22.7052 29.4934 22.7052C29.1722 22.7052 28.9366 22.8536 28.7987 23.1428C28.6984 23.3533 28.7005 23.3931 28.842 23.9423C29.3407 25.8768 28.5078 27.7452 26.7607 28.6121C24.6609 29.654 22.0803 28.6269 21.2494 26.4186C20.8227 25.2847 20.9452 24.0064 21.5808 22.9597C22.1001 22.1046 23.0586 21.4077 24.0667 21.1522C24.6187 21.0123 25.4472 21.0278 26.0258 21.1889C26.572 21.3409 26.8693 21.3196 27.0896 21.1126C27.4253 20.7972 27.4055 20.2168 27.0502 19.956C26.6172 19.638 25.0608 19.4516 24.1333 19.6067Z"
+            fill="white"
+          />
+        </svg>
+
+        <div class="flex flex-col gap-[5px] sm:w-[88%]">
+          <h5 class="text-[24px] leading-8 font-bold text-secondary-black">
+            Nuestra misión
+          </h5>
+          <p class="text-secondary-black text-body2">
+            Ayudar a negocios y emprendedores a crecer con páginas web modernas, rápidas y pensadas para generar consultas y ventas.
+          </p>
+        </div>
+      </div>
+
+      <div
+        data-aos="fade-left"
+        class="flex flex-col sm:flex-row justify-start items-start gap-2 sm:gap-[15px] group"
+      >
+        <svg
+          class="group-hover:-translate-y-3 transition-all duration-500 ease-linear"
+          width="50"
+          height="50"
+          viewBox="0 0 50 50"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="50" height="50" rx="25" fill="#5F2DEE" />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M11.3505 8.15307C11.2201 8.28993 11.1977 8.42055 11.1384 9.39101C11.102 9.98774 11.0638 10.484 11.0536 10.4938C11.0435 10.5036 10.5404 10.5412 9.93575 10.5772C8.93403 10.637 8.82185 10.6563 8.67324 10.7939C8.30782 11.1325 8.30466 11.1283 10.8777 13.7011C12.1798 15.0031 13.3086 16.1024 13.3859 16.144C13.4902 16.2001 13.8365 16.2014 14.7269 16.1489L15.9274 16.0782L18.767 18.8791C20.3288 20.4196 21.6671 21.7238 21.7412 21.7774C21.9347 21.9172 22.2671 21.9008 22.4728 21.7412C22.6125 21.6329 22.6502 21.5462 22.6502 21.3335C22.6502 21.0814 22.607 21.0201 22.0033 20.4141L21.3563 19.7646L21.6498 19.5816C22.3449 19.1479 23.4415 18.7488 24.4779 18.5522C25.1805 18.4189 26.7499 18.4489 27.4982 18.6099C29.0901 18.9524 30.4413 19.6487 31.5997 20.7234C34.9955 23.8739 35.1127 29.0884 31.8623 32.4089C30.6407 33.6568 29.1984 34.4367 27.4309 34.8053C26.6 34.9785 24.9853 34.9653 24.1652 34.7784C21.578 34.1888 19.5361 32.6193 18.3852 30.3353C17.7868 29.148 17.5329 28.063 17.5329 26.6934C17.5329 25.0578 17.8598 23.9246 18.8212 22.2285L18.9805 21.9473L18.8459 21.6973C18.7266 21.4758 18.6785 21.4449 18.4254 21.4269C18.0494 21.4001 17.9067 21.5529 17.4288 22.4944C16.7388 23.8536 16.4321 25.1466 16.4327 26.6934C16.4333 28.2706 16.751 29.5998 17.4522 30.9587C18.3671 32.7316 20.003 34.3103 21.8038 35.1579C25.9646 37.1164 30.9623 35.8533 33.6375 32.1671C34.1485 31.463 34.779 30.1941 35.0021 29.4209C35.3972 28.0512 35.4823 26.1968 35.2095 24.9004C34.4475 21.2787 31.7381 18.4729 28.1625 17.6027C25.6319 16.9868 23.1102 17.3836 20.7464 18.7696L20.4923 18.9186L19.6859 18.1254C19.2424 17.6891 18.8795 17.3082 18.8795 17.2789C18.8795 17.187 20.0948 16.4442 20.7985 16.1058C22.0121 15.5224 23.5268 15.1017 24.7817 14.9994L25.3308 14.9546L25.354 15.6669C25.3753 16.3212 25.3902 16.3895 25.5362 16.506C25.767 16.6901 26.0959 16.6696 26.3107 16.4578C26.4789 16.2919 26.4882 16.2476 26.4882 15.6181V14.9535L27.0437 14.9988C29.4263 15.1931 31.9464 16.2845 33.8728 17.9563C36.0726 19.8655 37.6041 22.8235 37.8444 25.6274L37.8873 26.1289H37.241C36.8855 26.1289 36.5195 26.1626 36.4277 26.2039C36.2158 26.2991 36.0909 26.5915 36.1496 26.8549C36.2245 27.1912 36.3958 27.2578 37.1852 27.2578H37.887L37.8411 27.8007C37.78 28.5231 37.5253 29.6879 37.265 30.4356C35.743 34.8073 31.6917 37.9837 27.1111 38.3969L26.4882 38.453V37.7436C26.4882 36.8789 26.4062 36.7237 25.9496 36.7237C25.7229 36.7237 25.6336 36.7608 25.5048 36.9085C25.3578 37.0771 25.3436 37.1523 25.3436 37.7635V38.4337L24.7881 38.3901C22.6938 38.2257 20.2465 37.2253 18.5092 35.8235C17.5546 35.0532 16.6463 34.0627 16.0022 33.0893C14.9705 31.5303 14.2489 29.5145 14.1225 27.8389L14.0787 27.2578H14.7135C15.4187 27.2578 15.5732 27.1967 15.7138 26.862C15.8213 26.606 15.7133 26.3126 15.4714 26.2039C15.3797 26.1626 15.0287 26.1289 14.6917 26.1289H14.0789L14.1193 25.5811C14.2432 23.9026 15.0189 21.7348 16.0144 20.2852C16.4779 19.6102 16.5541 19.3015 16.3184 19.054C16.1624 18.8903 15.8617 18.8392 15.6115 18.9339C15.4385 18.9994 14.6022 20.2895 14.1915 21.1245C13.5289 22.4717 13.067 24.1388 12.9749 25.5146L12.9338 26.1289H11.83C10.7477 26.1289 10.7228 26.1321 10.5608 26.2919C10.3359 26.5137 10.3359 26.8731 10.5608 27.0948C10.7228 27.2546 10.7477 27.2578 11.83 27.2578H12.9339L12.9779 27.9053C13.065 29.1892 13.5048 30.8088 14.123 32.1218C15.1728 34.3516 16.9426 36.3113 19.1004 37.6332C20.6456 38.5798 22.7417 39.2899 24.4346 39.4401C24.6938 39.4631 25.0044 39.497 25.1247 39.5155L25.3436 39.549V40.5995C25.3436 41.5618 25.3553 41.6648 25.4831 41.825C25.5957 41.9662 25.6793 42 25.9159 42C26.1525 42 26.2361 41.9662 26.3486 41.825C26.4765 41.6648 26.4882 41.5618 26.4882 40.5995V39.549L26.7071 39.5161C26.8275 39.4981 27.138 39.4656 27.3972 39.4439C28.6494 39.3391 30.3694 38.8452 31.6503 38.2226C35.1386 36.5269 37.6527 33.436 38.5709 29.7138C38.7075 29.16 38.7654 28.7986 38.9188 27.54L38.9532 27.2578L40.0432 27.2557C41.1812 27.2535 41.2704 27.2336 41.4253 26.9468C41.5499 26.716 41.517 26.4681 41.3383 26.2919C41.1762 26.132 41.1518 26.1289 40.0632 26.1289H38.9532L38.9188 25.8467C38.8999 25.6915 38.8493 25.2806 38.8065 24.9336C38.7073 24.1303 38.4257 23.027 38.1029 22.1777C36.6088 18.2458 33.195 15.2139 29.1345 14.2126C28.4019 14.0319 27.1933 13.8438 26.7658 13.8438H26.4882V12.7451C26.4882 11.667 26.4851 11.6432 26.3229 11.4833C26.1195 11.2827 25.7629 11.2663 25.5362 11.4471C25.3821 11.57 25.3766 11.6087 25.3561 12.6994L25.3349 13.8248L24.7503 13.8691C22.5282 14.0376 20.1311 14.9494 18.0975 16.3997C18.0279 16.4493 17.8478 16.3116 17.3597 15.8352L16.714 15.2051L16.7548 14.541C16.7772 14.1758 16.8141 13.6429 16.8368 13.3569L16.8779 12.8368L14.4291 10.4184C12.1167 8.13467 11.9669 8 11.7383 8C11.5727 8 11.4503 8.04834 11.3505 8.15307ZM15.7112 14.0999C15.6806 14.5512 15.6418 14.934 15.6251 14.9505C15.6083 14.967 15.2202 15.0052 14.7626 15.0354L13.9305 15.0903L12.1992 13.3909C11.2471 12.4563 10.4814 11.6784 10.4977 11.6622C10.5141 11.646 10.815 11.6089 11.1663 11.5797C12.0946 11.5025 12.1167 11.4842 12.1815 10.7384C12.2029 10.4924 12.2363 10.1888 12.2558 10.0639L12.2913 9.83673L14.0291 11.558L15.767 13.2793L15.7112 14.0999ZM24.5851 23.4078C22.9675 23.6592 21.196 24.3561 19.6875 25.3345C18.4721 26.1228 18.2062 26.3698 18.2062 26.711C18.2062 27.0087 18.4492 27.2459 19.4209 27.8972C21.0895 29.0157 22.873 29.735 24.5923 29.9829C25.3916 30.0982 27.2259 30.0299 27.9811 29.8568C28.885 29.6495 29.746 29.3453 30.6292 28.921C31.4495 28.527 32.8185 27.6708 33.3394 27.2261C33.5941 27.0087 33.6256 26.9502 33.6256 26.6934C33.6256 26.4366 33.5941 26.3781 33.3394 26.1606C32.4567 25.407 30.6071 24.3767 29.3499 23.9383C28.1673 23.5258 27.4477 23.3984 26.1516 23.3717C25.5035 23.3584 24.7986 23.3746 24.5851 23.4078ZM23.366 25.0536C22.7451 25.9635 22.7253 27.3485 23.3201 28.2716L23.5239 28.5881L23.3396 28.5449C22.6231 28.3772 21.1344 27.6746 20.1438 27.0367L19.6203 26.6996L20.276 26.2762C21.0704 25.7631 22.059 25.2741 22.9195 24.9683C23.2714 24.8433 23.5647 24.7395 23.5715 24.7377C23.5783 24.7358 23.4858 24.878 23.366 25.0536ZM26.8976 25.0425C27.7423 25.4959 28.103 26.554 27.7094 27.4238C27.1455 28.6697 25.6313 28.9963 24.6153 28.0911C23.8423 27.4023 23.7792 26.2194 24.474 25.4409C25.0848 24.7566 26.0648 24.5955 26.8976 25.0425ZM29.1759 25.0852C29.9004 25.3421 30.9553 25.8757 31.6637 26.3433L32.2183 26.7096L31.6595 27.0639C30.8753 27.5612 29.8675 28.0664 29.1004 28.3469C28.7409 28.4784 28.4161 28.5859 28.3786 28.5859C28.341 28.5859 28.3838 28.4791 28.4736 28.3485C28.8041 27.8683 28.9373 27.405 28.9401 26.7266C28.943 26.0208 28.8349 25.6182 28.5043 25.1042C28.2713 24.7418 28.2124 24.7435 29.1759 25.0852ZM25.7139 25.2948C25.6769 25.3089 25.5615 25.339 25.4574 25.3616C25.3534 25.3844 25.1333 25.5256 24.9684 25.6756C24.2203 26.3556 24.3785 27.5014 25.2817 27.9453C25.726 28.1637 26.0791 28.169 26.5219 27.9638C26.9244 27.7774 27.0427 27.6553 27.234 27.2289C27.6086 26.3935 27.0136 25.4004 26.0788 25.3009C25.9152 25.2834 25.7509 25.2807 25.7139 25.2948ZM26.1532 26.4961C26.2186 26.5738 26.2208 26.6363 26.1629 26.7618C26.0763 26.9492 25.8756 26.9761 25.7187 26.8215C25.5935 26.6979 25.5924 26.6891 25.6826 26.523C25.766 26.3693 26.0337 26.354 26.1532 26.4961Z"
+            fill="white"
+          />
+        </svg>
+
+        <div class="flex flex-col gap-[5px] sm:w-[88%]">
+          <h5 class="text-[24px] leading-8 font-bold text-secondary-black">
+            Nuestra visión
+          </h5>
+          <p class="text-secondary-black text-body2">
+            Ser el aliado digital de confianza para emprendedores y pymes que quieren tener presencia online y atraer más clientes.
+          </p>
+        </div>
+      </div>
+
+      <div
+        data-aos="fade-left"
+        class="flex flex-col sm:flex-row justify-start items-start gap-2 sm:gap-[15px] group"
+      >
+        <svg
+          class="group-hover:-translate-y-3 transition-all duration-500 ease-linear"
+          width="50"
+          height="50"
+          viewBox="0 0 50 50"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="50" height="50" rx="25" fill="#5F2DEE" />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M24.6261 10.125C24.5053 10.2458 24.5011 10.3333 24.5011 12.75C24.5011 15.1667 24.5053 15.2542 24.6261 15.375C24.7094 15.4583 24.8344 15.5 25.0011 15.5C25.1678 15.5 25.2928 15.4583 25.3761 15.375C25.4969 15.2542 25.5011 15.1667 25.5011 12.75C25.5011 10.3333 25.4969 10.2458 25.3761 10.125C25.2928 10.0417 25.1678 10 25.0011 10C24.8344 10 24.7094 10.0417 24.6261 10.125ZM14.5259 14.2771C14.265 14.3907 14.1586 14.6831 14.2778 14.9584C14.325 15.0672 15.106 15.8946 16.0134 16.7969C17.6243 18.3986 17.6693 18.4375 17.9153 18.4375C18.2483 18.4375 18.4391 18.2435 18.4391 17.9049C18.4391 17.6703 18.3807 17.6029 16.7986 16.0116C15.8963 15.1041 15.0676 14.3224 14.957 14.2746C14.7207 14.1723 14.7674 14.172 14.5259 14.2771ZM35.0316 14.2771C34.9285 14.3236 34.1059 15.1042 33.2036 16.0117C31.6019 17.6226 31.5631 17.6676 31.5631 17.9137C31.5631 18.2467 31.7571 18.4375 32.0956 18.4375C32.3303 18.4375 32.3977 18.3791 33.9888 16.7969C34.8963 15.8946 35.6773 15.0672 35.7244 14.9584C35.8469 14.6754 35.7374 14.3894 35.4626 14.2745C35.218 14.1723 35.2642 14.172 35.0316 14.2771ZM19.6736 18.5781C19.6175 18.6211 18.9934 19.5829 18.2867 20.7156C16.9181 22.9088 16.8495 23.0631 17.1111 23.3605C17.1713 23.4289 18.9154 24.9508 20.9872 26.7424C24.5927 29.8606 24.7644 30 25.0011 30C25.2378 30 25.4095 29.8606 29.0151 26.7424C31.0868 24.9508 32.831 23.4289 32.8912 23.3605C33.1527 23.0631 33.0841 22.9088 31.7155 20.7156C31.0088 19.5829 30.3847 18.6211 30.3287 18.5781C30.1799 18.4641 19.8223 18.4641 19.6736 18.5781ZM24.0012 19.5376C24.0012 19.5948 22.5371 21.9354 22.5013 21.9354C22.4655 21.9354 21.0014 19.5948 21.0014 19.5376C21.0014 19.5169 21.6764 19.5 22.5013 19.5C23.3262 19.5 24.0012 19.5169 24.0012 19.5376ZM29.0008 19.5376C29.0008 19.5948 27.5367 21.9354 27.5009 21.9354C27.4651 21.9354 26.001 19.5948 26.001 19.5376C26.001 19.5169 26.676 19.5 27.5009 19.5C28.3259 19.5 29.0008 19.5169 29.0008 19.5376ZM20.767 21.2448C21.171 21.8938 21.5014 22.4418 21.5014 22.4624C21.5014 22.4831 20.8264 22.5 20.0015 22.5C19.1765 22.5 18.5016 22.4831 18.5016 22.4624C18.5016 22.4052 19.9657 20.0646 20.0015 20.0646C20.0187 20.0646 20.3631 20.5957 20.767 21.2448ZM25.7667 21.2448C26.1705 21.8938 26.501 22.4418 26.501 22.4624C26.501 22.4831 25.826 22.5 25.0011 22.5C24.1762 22.5 23.5012 22.4831 23.5012 22.4624C23.5012 22.4052 24.9653 20.0646 25.0011 20.0646C25.0183 20.0646 25.3628 20.5957 25.7667 21.2448ZM30.7663 21.2448C31.1702 21.8938 31.5006 22.4418 31.5006 22.4624C31.5006 22.4831 30.8257 22.5 30.0007 22.5C29.1758 22.5 28.5009 22.4831 28.5009 22.4624C28.5009 22.4052 29.9649 20.0646 30.0007 20.0646C30.0179 20.0646 30.3625 20.5957 30.7663 21.2448ZM22.3162 24.0156C23.3779 26.7663 23.6877 27.5844 23.6732 27.5988C23.6605 27.6116 19.1226 23.7044 18.9518 23.5336C18.9333 23.5151 19.638 23.5 20.5178 23.5H22.1173L22.3162 24.0156ZM25.8834 25.7182C25.4153 26.9382 25.0183 27.9361 25.0011 27.9357C24.9681 27.935 23.3109 23.6273 23.3127 23.5469C23.3133 23.5211 24.0834 23.5 25.0241 23.5H26.7344L25.8834 25.7182ZM31.0288 23.558C30.8212 23.7606 26.3444 27.6142 26.3314 27.6013C26.3176 27.5875 26.5972 26.8493 27.6658 24.0781L27.8888 23.5H29.4885C30.4728 23.5 31.0653 23.5223 31.0288 23.558ZM10.1272 24.625C9.9576 24.7946 9.9576 25.2054 10.1272 25.375C10.248 25.4958 10.3355 25.5 12.752 25.5C15.1685 25.5 15.256 25.4958 15.3768 25.375C15.4601 25.2917 15.5018 25.1667 15.5018 25C15.5018 24.8333 15.4601 24.7083 15.3768 24.625C15.256 24.5042 15.1685 24.5 12.752 24.5C10.3355 24.5 10.248 24.5042 10.1272 24.625ZM34.6254 24.625C34.5421 24.7083 34.5004 24.8333 34.5004 25C34.5004 25.1667 34.5421 25.2917 34.6254 25.375C34.7462 25.4958 34.8337 25.5 37.2502 25.5C39.6667 25.5 39.7542 25.4958 39.875 25.375C39.9583 25.2917 40 25.1667 40 25C40 24.8333 39.9583 24.7083 39.875 24.625C39.7542 24.5042 39.6667 24.5 37.2502 24.5C34.8337 24.5 34.7462 24.5042 34.6254 24.625ZM38.1251 29.5865C37.9601 29.6323 36.6407 30.4161 34.9306 31.4842L32.0172 33.3039L31.7171 33.1519C31.4208 33.0019 31.395 33 29.693 33H27.9689L27.8283 32.6934C27.6357 32.2736 27.1004 31.8013 26.4788 31.5028C25.6407 31.1002 25.3065 31.0343 24.0949 31.0327C23.1756 31.0314 22.9612 31.0508 22.5027 31.176C21.0508 31.5726 19.6811 32.4266 19.2115 33.2281L19.0522 33.5H18.4998C17.9928 33.5 17.9441 33.4892 17.9057 33.3681C17.8371 33.1519 17.4259 32.7386 17.1579 32.6166C16.9263 32.5111 16.6645 32.5026 13.5801 32.5014C10.3346 32.5001 10.2491 32.5031 10.1272 32.625C10.0052 32.747 10.0022 32.8333 10.0022 36.25C10.0022 39.6667 10.0052 39.753 10.1272 39.875C10.2491 39.9969 10.3346 39.9999 13.5801 39.9986C16.6645 39.9974 16.9263 39.9889 17.1579 39.8834C17.4259 39.7614 17.8371 39.3481 17.9057 39.1319C17.9445 39.0096 17.9918 39 18.5576 39C18.8932 39 21.6381 39.225 24.6574 39.5C27.6767 39.775 30.2831 40 30.4494 40H30.7518L34.2034 36.9266C36.1017 35.2362 38.1238 33.4349 38.697 32.9237C39.8896 31.8598 40 31.6991 40 31.0247C40 30.6926 39.9664 30.549 39.8305 30.2992C39.6347 29.9394 39.2643 29.6576 38.8666 29.5659C38.5286 29.488 38.4746 29.4895 38.1251 29.5865ZM38.8282 30.7358C38.8895 30.7896 38.9376 30.9196 38.9376 31.0314C38.9376 31.1934 38.87 31.2947 38.5782 31.5696C37.7972 32.3057 30.3525 38.9074 30.2847 38.9241C30.2448 38.934 27.8934 38.7301 25.0593 38.471C21.3363 38.1307 19.6421 38 18.954 38H18.0016V36.25V34.5H18.8494C19.3157 34.5 19.7496 34.4719 19.8136 34.4377C19.8782 34.4031 19.9725 34.2294 20.0255 34.0471C20.231 33.3407 21.3969 32.5724 22.8138 32.2099C24.0355 31.8972 25.4444 32.0673 26.3272 32.6338C26.6979 32.8717 26.8638 33.0984 26.9746 33.5184C27.0216 33.6969 27.1085 33.8784 27.1675 33.9215C27.2479 33.9802 27.7358 34 29.1085 34C30.5596 34 30.9869 34.0187 31.1567 34.0896C31.3906 34.1874 31.4799 34.3874 31.4114 34.6604C31.3287 34.99 31.2237 35 27.8466 35C24.8344 35 24.7478 35.0034 24.6261 35.125C24.4565 35.2946 24.4565 35.7054 24.6261 35.875C24.748 35.9969 24.8344 36 28.0654 36C31.7184 36 31.6336 36.0084 32.0528 35.6062C32.3467 35.3243 32.4545 35.0897 32.4959 34.6421L32.5318 34.253L35.4968 32.4074C38.5714 30.4936 38.5593 30.4997 38.8282 30.7358ZM15.0018 36.25V39H13.002H11.0021V36.25V33.5H13.002H15.0018V36.25ZM16.6515 33.587C16.7927 33.646 16.8826 33.7396 16.9308 33.8776C17.0423 34.1976 17.0282 38.378 16.9147 38.6498C16.8195 38.8778 16.5739 39 16.2112 39H16.0018V36.25V33.5H16.2225C16.3439 33.5 16.537 33.5392 16.6515 33.587Z"
+            fill="white"
+          />
+        </svg>
+
+        <div class="flex flex-col gap-[5px] sm:w-[88%]">
+          <h5 class="text-[24px] leading-8 font-bold text-secondary-black">
+            Nuestros valores
+          </h5>
+          <p class="text-secondary-black text-body2">
+            Trabajo cercano con el cliente, diseño claro, resultados medibles y soluciones pensadas para el crecimiento del negocio.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ <div
+  class="container pt-[70px] md:pt-[80px] xl:pt-[100px] flex flex-col gap-[30px] md:gap-10 xl:gap-[50px] overflow-hidden"
+>
+  <div class="flex flex-col gap-[10px]">
+    <div data-aos="fade-up" class="flex justify-center items-center gap-[5px]">
+      <img src="./assets/subIcon-d00251e3.svg" alt="icon" />
+      <p class="text-body1 text-primary-dark">¿Por qué elegirnos?</p>
+    </div>
+    <div class="">
+      <h2
+        class="headline text-[28px] sm:text-[36px] md:text-[40px] xl:text-[44px] leading-10 sm:leading-[46px] md:leading-[50px] xl:leading-[56px] font-bold text-secondary-black text-center"
+      >
+        Por qué los negocios confían en nuestros servicios web
+      </h2>
+    </div>
+  </div>
+
+  <div
+    class="flex flex-col lg:flex-row justify-center items-center gap-5 xl:gap-10"
+  >
+    <div
+      class="w-full lg:w-[33%] flex flex-col sm:flex-row lg:flex-col gap-5 sm:gap-10"
+    >
+      <div
+        data-aos="fade-right"
+        class="flex flex-col gap-[10px] lg:items-end group"
+      >
+        <img
+          src="../assets/images/chooseicon1.svg"
+          alt="icon"
+          class="w-[42px] group-hover:-translate-y-2 transition-all duration-500 ease-linear"
+        />
+        <div class="flex flex-col gap-[5px]">
+          <h5
+            class="text-[22px] sm:text-[24px] leading-7 sm:leading-8 font-bold text-secondary-black lg:text-right"
+          >
+            Soluciones profesionales
+          </h5>
+          <p class="text-body2 text-secondary-black lg:text-right">
+            Desarrollamos páginas web modernas, rápidas y optimizadas para generar consultas y ventas.
+          </p>
+        </div>
+      </div>
+
+      <div
+        data-aos="fade-right"
+        class="flex flex-col gap-[10px] lg:items-end group"
+      >
+        <img
+          src="../assets/images/chooseicon2.svg"
+          alt="icon"
+          class="w-[42px] group-hover:-translate-y-2 transition-all duration-500 ease-linear"
+        />
+        <div class="flex flex-col gap-[5px]">
+          <h5
+            class="text-[22px] sm:text-[24px] leading-7 sm:leading-8 font-bold text-secondary-black lg:text-right"
+          >
+            Pensado para hacer crecer tu negocio
+          </h5>
+          <p class="text-body2 text-secondary-black lg:text-right">
+            Cada sitio está diseñado con estrategia, estructura clara y optimización para atraer clientes y aumentar tus consultas.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div data-aos="zoom-in" data-tilt class="w-[288px] sm:w-[50%] lg:w-[34%]">
+      <img src="../assets/images/choose.png" alt="choose" class="w-full" />
+    </div>
+
+    <div
+      class="w-full lg:w-[33%] flex flex-col sm:flex-row lg:flex-col gap-5 sm:gap-10"
+    >
+      <div data-aos="fade-left" class="flex flex-col gap-[10px] group">
+        <img
+          src="../assets/images/chooseicon3.svg"
+          alt="icon"
+          class="w-[42px] group-hover:-translate-y-2 transition-all duration-500 ease-linear"
+        />
+        <div class="flex flex-col gap-[5px]">
+          <h5
+            class="text-[22px] sm:text-[24px] leading-7 sm:leading-8 font-bold text-secondary-black"
+          >
+            Soporte y acompañamiento
+          </h5>
+          <p class="text-body2 text-secondary-black">
+            Te acompañamos durante todo el proceso, desde la idea inicial hasta la publicación y las mejoras posteriores.
+          </p>
+        </div>
+      </div>
+
+      <div data-aos="fade-left" class="flex flex-col gap-[10px] group">
+        <img
+          src="../assets/images/chooseicon4.svg"
+          alt="icon"
+          class="w-[42px] group-hover:-translate-y-2 transition-all duration-500 ease-linear"
+        />
+        <div class="flex flex-col gap-[5px]">
+          <h5
+            class="text-[22px] sm:text-[24px] leading-7 sm:leading-8 font-bold text-secondary-black"
+          >
+            Trabajo cercano y transparente
+          </h5>
+          <p class="text-body2 text-secondary-black">
+            Trabajamos de forma simple y directa, con comunicación clara y procesos pensados para que entiendas cada paso de tu proyecto.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <div class="bg-secondary-dark mt-[70px] md:mt-[80px] xl:mt-[100px] py-[50px]">
   <div class="container relative flex flex-col gap-[30px] md:gap-10 xl:gap-[50px] overflow-hidden">
     <div class="relative z-[3] flex flex-col gap-[10px]">
       <div data-aos="fade-up" class="flex justify-center items-center gap-[5px]">
-        <img src="assets/images/subicon2.svg" alt="icon" />
+        <img src="./assets/subicon2-aff9201b.svg" alt="icon" />
         <p class="text-body1 text-primary-light">Trabajos realizados</p>
       </div>
       <div>
@@ -337,32 +791,32 @@
         <div id="horizontal-alignment-1" role="tabpanel" aria-labelledby="horizontal-alignment-item-1" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 xl:gap-[35px]">
           <div data-aos="zoom-in" data-tilt>
             <a href="assets/images/tab1.png" class="glightbox overflow-hidden" data-gallery="mygallery">
-              <img src="assets/images/tab1.png" alt="tab" class="w-[288px] sm:w-full mx-auto sm:mx-0" />
+              <img src="./assets/tab1-06db9aaf.png" alt="tab" class="w-[288px] sm:w-full mx-auto sm:mx-0" />
             </a>
           </div>
           <div data-aos="zoom-in" data-tilt>
             <a href="assets/images/tab2.png" class="glightbox overflow-hidden" data-gallery="mygallery">
-              <img src="assets/images/tab2.png" alt="tab" class="w-[288px] sm:w-full mx-auto sm:mx-0" />
+              <img src="./assets/tab2-03781f9d.png" alt="tab" class="w-[288px] sm:w-full mx-auto sm:mx-0" />
             </a>
           </div>
           <div data-aos="zoom-in" data-tilt>
             <a href="assets/images/tab3.png" class="glightbox overflow-hidden" data-gallery="mygallery">
-              <img src="assets/images/tab3.png" alt="tab" class="w-[288px] sm:w-full mx-auto sm:mx-0" />
+              <img src="./assets/tab3-b23627f6.png" alt="tab" class="w-[288px] sm:w-full mx-auto sm:mx-0" />
             </a>
           </div>
           <div data-aos="zoom-in" data-tilt>
             <a href="assets/images/tab4.png" class="glightbox overflow-hidden" data-gallery="mygallery">
-              <img src="assets/images/tab4.png" alt="tab" class="w-[288px] sm:w-full mx-auto sm:mx-0" />
+              <img src="./assets/tab4-1797fa51.png" alt="tab" class="w-[288px] sm:w-full mx-auto sm:mx-0" />
             </a>
           </div>
           <div data-aos="zoom-in" data-tilt>
             <a href="assets/images/tab5.png" class="glightbox overflow-hidden" data-gallery="mygallery">
-              <img src="assets/images/tab5.png" alt="tab" class="w-[288px] sm:w-full mx-auto sm:mx-0" />
+              <img src="./assets/tab5-ff08ffa5.png" alt="tab" class="w-[288px] sm:w-full mx-auto sm:mx-0" />
             </a>
           </div>
           <div data-aos="zoom-in" data-tilt>
             <a href="assets/images/tab6.png" class="glightbox overflow-hidden" data-gallery="mygallery">
-              <img src="assets/images/tab6.png" alt="tab" class="w-[288px] sm:w-full mx-auto sm:mx-0" />
+              <img src="./assets/tab6-32c0ba0a.png" alt="tab" class="w-[288px] sm:w-full mx-auto sm:mx-0" />
             </a>
           </div>
         </div>
@@ -371,17 +825,17 @@
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 xl:gap-[35px]">
             <div data-tilt>
               <a href="assets/images/tab1.png" class="glightbox overflow-hidden" data-gallery="mygallery">
-                <img src="assets/images/tab1.png" alt="tab" class="w-[288px] sm:w-full mx-auto sm:mx-0" />
+                <img src="./assets/tab1-06db9aaf.png" alt="tab" class="w-[288px] sm:w-full mx-auto sm:mx-0" />
               </a>
             </div>
             <div data-tilt>
               <a href="assets/images/tab2.png" class="glightbox overflow-hidden" data-gallery="mygallery">
-                <img src="assets/images/tab2.png" alt="tab" class="w-[288px] sm:w-full mx-auto sm:mx-0" />
+                <img src="./assets/tab2-03781f9d.png" alt="tab" class="w-[288px] sm:w-full mx-auto sm:mx-0" />
               </a>
             </div>
             <div data-tilt>
               <a href="assets/images/tab4.png" class="glightbox overflow-hidden" data-gallery="mygallery">
-                <img src="assets/images/tab4.png" alt="tab" class="w-[288px] sm:w-full mx-auto sm:mx-0" />
+                <img src="./assets/tab4-1797fa51.png" alt="tab" class="w-[288px] sm:w-full mx-auto sm:mx-0" />
               </a>
             </div>
           </div>
@@ -391,12 +845,12 @@
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 xl:gap-[35px]">
             <div data-aos="zoom-in" data-tilt>
               <a href="assets/images/tab6.png" class="glightbox overflow-hidden" data-gallery="mygallery">
-                <img src="assets/images/tab6.png" alt="tab" class="w-[288px] sm:w-full mx-auto sm:mx-0" />
+                <img src="./assets/tab6-32c0ba0a.png" alt="tab" class="w-[288px] sm:w-full mx-auto sm:mx-0" />
               </a>
             </div>
             <div data-aos="zoom-in" data-tilt>
               <a href="assets/images/tab5.png" class="glightbox overflow-hidden" data-gallery="mygallery">
-                <img src="assets/images/tab5.png" alt="tab" class="w-[288px] sm:w-full mx-auto sm:mx-0" />
+                <img src="./assets/tab5-ff08ffa5.png" alt="tab" class="w-[288px] sm:w-full mx-auto sm:mx-0" />
               </a>
             </div>
           </div>
@@ -406,7 +860,7 @@
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 xl:gap-[35px]">
             <div data-aos="zoom-in" data-tilt>
               <a href="assets/images/tab3.png" class="glightbox overflow-hidden" data-gallery="mygallery">
-                <img src="assets/images/tab3.png" alt="tab" class="w-[288px] sm:w-full mx-auto sm:mx-0" />
+                <img src="./assets/tab3-b23627f6.png" alt="tab" class="w-[288px] sm:w-full mx-auto sm:mx-0" />
               </a>
             </div>
           </div>
@@ -416,7 +870,200 @@
   </div>
 </div>
 
-    {{> partials/work}} {{> partials/weare}}
+    <div
+  class="container flex flex-col xl:flex-row justify-center items-center gap-[30px] sm:gap-10 pt-[70px] md:pt-[80px] xl:pt-[100px] overflow-hidden"
+>
+  <div class="flex flex-col gap-5 w-full xl:w-[42%]">
+    <div class="flex flex-col gap-[10px]">
+      <div data-aos="fade-up" class="flex justify-start items-center gap-[5px]">
+        <img src="./assets/subIcon-d00251e3.svg" alt="icon" />
+        <p class="text-body1 text-primary-dark">¿Cómo trabajamos?</p>
+      </div>
+      <div class="">
+        <h2
+          class="headline text-[28px] sm:text-[36px] md:text-[40px] xl:text-[44px] leading-10 sm:leading-[46px] md:leading-[50px] xl:leading-[56px] font-bold text-secondary-black"
+        >
+          Proceso para el éxito de tu web
+        </h2>
+      </div>
+      <p
+        data-aos="fade-up"
+        class="text-body2 sm:text-body1 text-secondary-black"
+      >
+        Nuestro método combina análisis, creatividad y tecnología para crear sitios web que impulsan tu negocio. Te acompañamos en cada etapa: desde la estrategia inicial hasta el lanzamiento y soporte continuo.
+      </p>
+
+      <div
+        data-aos="fade-up"
+        class="flex justify-start items-center mt-2 sm:mt-5 xl:mt-[50px]"
+      >
+        <a
+          href="contact.html"
+          class="flex justify-center items-center gap-[10px] theme-btn relative py-2 xl:py-[10px] px-5 xl:px-[22px] rounded-[30px] text-secondary-white transition-all duration-500 ease-linear bg-primary-dark"
+        >
+          <p class="text-body3 md:text-body2 xl:text-body1 font-medium">
+            Contáctanos
+          </p>
+          <svg
+            class="w-[14px] md:w-[16px] xl:w-[18px] h-[14px] md:h-[16px] xl:h-[18px]"
+            viewBox="0 0 18 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.682724 4.97469C2.08646 2.21852 4.98256 0.284124 8.0528 0.0519076C8.38097 0.0271321 8.69909 0.00392863 8.7598 0.000397033C8.82051 -0.00313456 9.17517 0.0172919 9.54793 0.0458163C13.9025 0.379199 17.3318 3.58904 17.9531 7.91329C18.0498 8.58658 17.9895 10.1486 17.8404 10.8308C17.5793 12.0257 17.0025 13.3252 16.3091 14.2809C15.8282 14.9438 14.8652 15.891 14.1961 16.3593C13.2031 17.0544 11.9161 17.607 10.6639 17.8762C10.1548 17.9856 9.93361 18.0006 8.84258 18C7.67617 17.9993 7.56083 17.99 6.94285 17.8467C5.06927 17.4124 3.71697 16.6811 2.41109 15.396C1.38724 14.3886 0.745634 13.418 0.273141 12.1619C0.166346 11.878 0.0619137 11.5662 0.0409961 11.4689L0.00303078 11.2919L4.29863 11.3059L8.59423 11.3198L8.62182 13.3844L8.64942 15.449L11.8919 12.2617C13.6753 10.5086 15.1344 9.05379 15.1344 9.02874C15.1344 9.00364 13.6691 7.54079 11.8781 5.77787L8.62182 2.5726V4.65064V6.72869H4.31095H0L0.0379654 6.57928C0.11424 6.27931 0.472886 5.38674 0.682724 4.97469Z"
+              fill="white"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex flex-col gap-5 w-full xl:w-[58%]">
+    <div
+      data-aos="fade-left"
+      class="flex flex-col sm:flex-row justify-start items-start gap-3 sm:gap-5 group"
+    >
+      <img
+        src="../assets/images/workicon1.svg"
+        alt="icon"
+        class="size-[50px] sm:size-[64px] group-hover:-translate-y-2 transition-all duration-300 ease-linear"
+      />
+      <div class="flex flex-col gap-[5px] sm:gap-[10px]">
+        <h5
+          class="text-[22px] sm:text-[24px] leading-7 sm:leading-8 font-bold text-secondary-black"
+        >
+          Análisis y Estrategia
+        </h5>
+        <p class="text-body2 text-secondary-black">
+          Analizamos tu negocio, objetivos y público para definir la mejor estrategia digital. Creamos un plan a medida que guía todo el proceso y asegura resultados alineados con tus metas.
+        </p>
+      </div>
+    </div>
+
+    <div
+      data-aos="fade-left"
+      class="flex flex-col sm:flex-row justify-start items-start gap-3 sm:gap-5 group"
+    >
+      <img
+        src="../assets/images/workicon2.svg"
+        alt="icon"
+        class="size-[50px] sm:size-[64px] group-hover:-translate-y-2 transition-all duration-300 ease-linear"
+      />
+      <div class="flex flex-col gap-[5px] sm:gap-[10px]">
+        <h5
+          class="text-[22px] sm:text-[24px] leading-7 sm:leading-8 font-bold text-secondary-black"
+        >
+          Diseño y Desarrollo
+        </h5>
+        <p class="text-body2 text-secondary-black">
+          Diseñamos la experiencia visual y desarrollamos tu sitio web con tecnología moderna. Te mostramos avances y recibimos tu feedback en cada etapa para lograr un resultado profesional y funcional.
+        </p>
+      </div>
+    </div>
+
+    <div
+      data-aos="fade-left"
+      class="flex flex-col sm:flex-row justify-start items-start gap-3 sm:gap-5 group"
+    >
+      <img
+        src="../assets/images/workicon3.svg"
+        alt="icon"
+        class="size-[50px] sm:size-[64px] group-hover:-translate-y-2 transition-all duration-300 ease-linear"
+      />
+      <div class="flex flex-col gap-[5px] sm:gap-[10px]">
+        <h5
+          class="text-[22px] sm:text-[24px] leading-7 sm:leading-8 font-bold text-secondary-black"
+        >
+          Pruebas y Optimización
+        </h5>
+        <p class="text-body2 text-secondary-black">
+          Revisamos y testeamos el sitio en distintos dispositivos y navegadores. Optimizamos velocidad, seguridad y usabilidad para garantizar la mejor experiencia a tus usuarios.
+        </p>
+      </div>
+    </div>
+
+    <div
+      data-aos="fade-left"
+      class="flex flex-col sm:flex-row justify-start items-start gap-3 sm:gap-5 group"
+    >
+      <img
+        src="../assets/images/workicon4.svg"
+        alt="icon"
+        class="size-[50px] sm:size-[64px] group-hover:-translate-y-2 transition-all duration-300 ease-linear"
+      />
+      <div class="flex flex-col gap-[5px] sm:gap-[10px]">
+        <h5
+          class="text-[22px] sm:text-[24px] leading-7 sm:leading-8 font-bold text-secondary-black"
+        >
+          Lanzamiento y Soporte
+        </h5>
+        <p class="text-body2 text-secondary-black">
+          Publicamos tu web y te acompañamos con soporte, capacitación y mejoras continuas. Nos aseguramos de que tu inversión genere resultados y tu sitio siga creciendo junto a tu negocio.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+ <div
+  class="bg-[url(/assets/images/wearebg.png)] bg-cover bg-center bg-no-repeat w-full bg-fixed py-[90px] sm:py-[107px] overflow-hidden mt-[70px] md:mt-[80px] xl:mt-[100px]"
+>
+  <div class="container">
+    <div class="flex flex-col gap-5 w-full xl:w-[42%]">
+      <div class="flex flex-col gap-[10px]">
+        <div
+          data-aos="fade-up"
+          class="flex justify-start items-center gap-[5px]"
+        >
+          <img src="./assets/subicon2-aff9201b.svg" alt="icon" />
+          <p class="text-body1 text-primary-light">¿Quiénes somos?</p>
+        </div>
+        <div class="">
+          <h2
+            class="headline text-secondary-white text-[28px] sm:text-[36px] md:text-[40px] xl:text-[44px] leading-10 sm:leading-[46px] md:leading-[50px] xl:leading-[56px] font-bold"
+          >
+            Impulsamos el crecimiento de tu negocio online
+          </h2>
+        </div>
+        <p
+          data-aos="fade-up"
+          class="text-body2 sm:text-body1 text-secondary-white"
+        >
+          Creamos páginas web profesionales que potencian tu presencia digital, atraen clientes y ayudan a que tu negocio crezca. Nuestro equipo te acompaña en cada paso para que tu marca destaque y genere resultados reales en internet.
+        </p>
+
+        <div
+          data-aos="fade-up"
+          class="flex justify-start items-center mt-2 sm:mt-5 xl:mt-[50px]"
+        >
+          <a
+            href="abouts.html"
+            class="flex justify-center items-center gap-[10px] theme-btn2 relative z-[1] py-2 xl:py-[10px] px-5 xl:px-[22px] rounded-[30px] text-secondary-white transition-all duration-500 ease-linear bg-primary-dark group"
+          >
+            <p
+              class="text-body3 md:text-body2 xl:text-body1 font-medium group-hover:text-primary-dark transition-all duration-300 ease-linear"
+            >
+              Conocé más
+            </p>
+            <svg
+              class="w-[14px] md:w-[16px] xl:w-[18px] h-[14px] md:h-[16px] xl:h-[18px]"
+              viewBox="0 0 18 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.682724 4.97469C2.08646 2.21852 4.98256 0.284124 8.0528 0.0519076C8.38097 0.0271321 8.69909 0.00392863 8.7598 0.000397033C8.82051 -0.00313456 9.17517 0.0172919 9.54793 0.0458163C13.9025 0.379199 17.3318 3.58904 17.9531 7.91329C18.0498 8.58658 17.9895 10.1486 17.8404 10.8308C17.5793 12.0257 17.0025 13.3252 16.3091 14.2809C15.8282 14.9438 14.8652 15.891 14.1961 16.3593C13.2031 17.0544 11.9161 17.607 10.6639 17.8762C10.1548 17.9856 9.93361 18.0006 8.84258 18C7.67617 17.9993 7.56083 17.99 6.94285 17.8467C5.06927 17.4124 3.71697 16.6811 2.41109 15.396C1.38724 14.3886 0.745634 13.418 0.273141 12.1619C0.166346 11.878 0.0619137 11.5662 0.0409961 11.4689L0.00303078 11.2919L4.29863 11.3059L8.59423 11.3198L8.62182 13.3844L8.64942 15.449L11.8919 12.2617C13.6753 10.5086 15.1344 9.05379 15.1344 9.02874C15.1344 9.00364 13.6691 7.54079 11.8781 5.77787L8.62182 2.5726V4.65064V6.72869H4.31095H0L0.0379654 6.57928C0.11424 6.27931 0.472886 5.38674 0.682724 4.97469Z"
+                class="fill-secondary-white group-hover:fill-primary-dark transition-all duration-300 ease-linear"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
     <div
       id="precios"
@@ -427,7 +1074,7 @@
           data-aos="fade-up"
           class="flex justify-center items-center gap-[5px]"
         >
-          <img src="assets/images/subIcon.svg" alt="icon" />
+          <img src="./assets/subIcon-d00251e3.svg" alt="icon" />
           <p class="text-body1 text-primary-dark">Planes de precios</p>
         </div>
         <div class="">
@@ -666,56 +1313,56 @@
             </div>
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8">
               <div class="flex flex-col items-center">
-                <img src="assets/images/html.svg" alt="HTML5" class="w-12 h-12 mb-2">
+                <img src="./assets/html-e03ea668.svg" alt="HTML5" class="w-12 h-12 mb-2">
                 <h5 class="text-center font-medium">HTML5</h5>
               </div>
               <div class="flex flex-col items-center">
-                <img src="assets/images/css.svg" alt="CSS3" class="w-12 h-12 mb-2">
+                <img src="./assets/css-ec17b46b.svg" alt="CSS3" class="w-12 h-12 mb-2">
                 <h5 class="text-center font-medium">CSS3</h5>
               </div>
               <div class="flex flex-col items-center">
-                <img src="assets/images/bootstrap.svg" alt="Bootstrap" class="w-12 h-12 mb-2">
+                <img src="./assets/bootstrap-65613e71.svg" alt="Bootstrap" class="w-12 h-12 mb-2">
                 <h5 class="text-center font-medium">Bootstrap</h5>
               </div>
               <div class="flex flex-col items-center">
-                <img src="assets/images/nodejs.svg" alt="Nodejs" class="w-12 h-12 mb-2">
+                <img src="./assets/nodejs-0687c366.svg" alt="Nodejs" class="w-12 h-12 mb-2">
                 <h5 class="text-center font-medium">Nodejs</h5>
               </div>
               <div class="flex flex-col items-center">
-                <img src="assets/images/react.svg" alt="Reactjs" class="w-12 h-12 mb-2">
+                <img src="./assets/react-d8f41330.svg" alt="Reactjs" class="w-12 h-12 mb-2">
                 <h5 class="text-center font-medium">Reactjs</h5>
               </div>
               <div class="flex flex-col items-center">
-                <img src="assets/images/wordpress.svg" alt="Wordpress" class="w-12 h-12 mb-2">
+                <img src="./assets/wordpress-d260e4a4.svg" alt="Wordpress" class="w-12 h-12 mb-2">
                 <h5 class="text-center font-medium">Wordpress</h5>
               </div>
               <div class="flex flex-col items-center">
-                <img src="assets/images/python.svg" alt="Python" class="w-12 h-12 mb-2">
+                <img src="./assets/python-ce29b56a.svg" alt="Python" class="w-12 h-12 mb-2">
                 <h5 class="text-center font-medium">Python</h5>
               </div>
               <div class="flex flex-col items-center">
-                <img src="assets/images/angular.svg" alt="Angular" class="w-12 h-12 mb-2">
+                <img src="./assets/angular-2b787cbb.svg" alt="Angular" class="w-12 h-12 mb-2">
                 <h5 class="text-center font-medium">Angular</h5>
               </div>
               <div class="flex flex-col items-center">
-                <img src="assets/images/jquery.svg" alt="Jquery" class="w-12 h-12 mb-2">
+                <img src="./assets/jquery-d084b025.svg" alt="Jquery" class="w-12 h-12 mb-2">
                 <h5 class="text-center font-medium">Jquery</h5>
               </div>
               <div class="flex flex-col items-center">
-                <img src="assets/images/vuejs.svg" alt="Vuejs" class="w-12 h-12 mb-2">
+                <img src="./assets/vuejs-fd9cfd17.svg" alt="Vuejs" class="w-12 h-12 mb-2">
                 <h5 class="text-center font-medium">Vuejs</h5>
               </div>
               <div class="flex flex-col items-center">
-                <img src="assets/images/laravel.svg" alt="Laravel" class="w-12 h-12 mb-2">
+                <img src="./assets/laravel-ca0d4429.svg" alt="Laravel" class="w-12 h-12 mb-2">
                 <h5 class="text-center font-medium">Laravel</h5>
               </div>
               <div class="flex flex-col items-center">
-                <img src="assets/images/dotnet.svg" alt="DotNet" class="w-12 h-12 mb-2">
+                <img src="./assets/dotnet-4cf4b498.svg" alt="DotNet" class="w-12 h-12 mb-2">
                 <h5 class="text-center font-medium">DotNet</h5>
               </div>
               <div class="col-span-full flex justify-center mt-4">
                 <div class="flex flex-col items-center">
-                  <img src="assets/images/framer.png" alt="Framer" class="w-12 h-12 mb-2">
+                  <img src="./assets/framer-235a72be.png" alt="Framer" class="w-12 h-12 mb-2">
                   <h5 class="text-center font-medium">Framer</h5>
                 </div>
               </div>
@@ -728,7 +1375,534 @@
 
         
 
+    <div
+  class="bg-[url('/assets/images/testimonialbg.png')] bg-center bg-cover bg-no-repeat py-[60px] mt-[70px] md:mt-[80px] xl:mt-[100px]"
+>
+  <div class="container overflow-hidden">
+    <div class="flex flex-col gap-[30px] md:gap-10 xl:gap-[50px]">
+      <div class="relative z-[3] flex flex-col gap-[10px]">
+        <div
+          data-aos="fade-up"
+          class="flex justify-center items-center gap-[5px]"
+        >
+          <img src="./assets/subicon2-aff9201b.svg" alt="icon" />
+          <p class="text-body1 text-primary-light">Testimonios</p>
+        </div>
+        <div class="">
+          <h2
+            class="headline text-[28px] sm:text-[36px] md:text-[40px] xl:text-[44px] leading-10 sm:leading-[46px] md:leading-[50px] xl:leading-[56px] font-bold text-secondary-white text-center"
+          >
+            Historias de clientes: resultados reales
+          </h2>
+        </div>
+      </div>
 
-    <script type="module" src="assets/js/particle.js"></script>
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        class="swiper testimonial-slider w-full lg:w-[810px] mx-auto overflow-hidden"
+      >
+        <div class="swiper-wrapper cursor-pointer">
+          <div class="swiper-slide overflow-hidden">
+            <p
+              class="text-body1 md:text-[20px] lg:text-[22px] xl:text-[24px] md:leading-[26px] lg:leading-7 xl:leading-8 font-medium text-secondary-white text-center"
+            >
+              “Desde que lanzamos nuestra nueva web, recibimos el doble de consultas y nuestros clientes nos felicitan por la imagen profesional. ¡Excelente trabajo!”
+            </p>
+
+            <div
+              class="mt-5 md:mt-[30px] flex flex-col items-center text-center"
+            >
+              <h5
+                class="text-body1 md:text-[20px] lg:text-[22px] xl:text-[24px] md:leading-[26px] lg:leading-7 xl:leading-8 font-bold text-secondary-white"
+              >
+                Laura Fernández
+              </h5>
+              <p class="text-body1 text-primary-light">Emprendedora</p>
+            </div>
+          </div>
+          <div class="swiper-slide overflow-hidden">
+            <p
+              class="text-body1 md:text-[20px] lg:text-[22px] xl:text-[24px] md:leading-[26px] lg:leading-7 xl:leading-8 font-medium text-secondary-white text-center"
+            >
+              “El equipo entendió perfectamente lo que necesitaba. Ahora mi negocio tiene presencia online y los clientes me encuentran fácilmente.”
+            </p>
+
+            <div
+              class="mt-5 md:mt-[30px] flex flex-col items-center text-center"
+            >
+              <h5
+                class="text-body1 md:text-[20px] lg:text-[22px] xl:text-[24px] md:leading-[26px] lg:leading-7 xl:leading-8 font-bold text-secondary-white"
+              >
+                Martín Gómez
+              </h5>
+              <p class="text-body1 text-primary-light">Dueño de local</p>
+            </div>
+          </div>
+          <div class="swiper-slide overflow-hidden">
+            <p
+              class="text-body1 md:text-[20px] lg:text-[22px] xl:text-[24px] md:leading-[26px] lg:leading-7 xl:leading-8 font-medium text-secondary-white text-center"
+            >
+              “Gracias a la web que nos diseñaron, nuestra marca se ve mucho más profesional y recibimos más pedidos que nunca.”
+            </p>
+
+            <div
+              class="mt-5 md:mt-[30px] flex flex-col items-center text-center"
+            >
+              <h5
+                class="text-body1 md:text-[20px] lg:text-[22px] xl:text-[24px] md:leading-[26px] lg:leading-7 xl:leading-8 font-bold text-secondary-white"
+              >
+                Sofía Martínez
+              </h5>
+              <p class="text-body1 text-primary-light">Tienda online</p>
+            </div>
+          </div>
+          <div class="swiper-slide overflow-hidden">
+            <p
+              class="text-body1 md:text-[20px] lg:text-[22px] xl:text-[24px] md:leading-[26px] lg:leading-7 xl:leading-8 font-medium text-secondary-white text-center"
+            >
+              “Muy recomendables. La web es rápida, fácil de usar y desde el primer mes notamos más consultas de potenciales clientes.”
+            </p>
+
+            <div
+              class="mt-5 md:mt-[30px] flex flex-col items-center text-center"
+            >
+              <h5
+                class="text-body1 md:text-[20px] lg:text-[22px] xl:text-[24px] md:leading-[26px] lg:leading-7 xl:leading-8 font-bold text-secondary-white"
+              >
+                Ricardo López
+              </h5>
+              <p class="text-body1 text-primary-light">Profesional independiente</p>
+            </div>
+          </div>
+          <div class="swiper-slide overflow-hidden">
+            <p
+              class="text-body1 md:text-[20px] lg:text-[22px] xl:text-[24px] md:leading-[26px] lg:leading-7 xl:leading-8 font-medium text-secondary-white text-center"
+            >
+              “El sitio web superó mis expectativas. Ahora mi empresa transmite confianza y profesionalismo, y eso se nota en los resultados.”
+            </p>
+
+            <div
+              class="mt-5 md:mt-[30px] flex flex-col items-center text-center"
+            >
+              <h5
+                class="text-body1 md:text-[20px] lg:text-[22px] xl:text-[24px] md:leading-[26px] lg:leading-7 xl:leading-8 font-bold text-secondary-white"
+              >
+                Esteban Ruiz
+              </h5>
+              <p class="text-body1 text-primary-light">Empresario</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="testimonial-pagination !mt-[30px] text-center relative"
+        ></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <div data-aos="zoom-in"
+  class="container pt-[70px] md:pt-[80px] xl:pt-[100px] relative flex flex-col gap-[30px] md:gap-10 xl:gap-[50px] overflow-hidden"
+>
+</div>
+
+
+
+    <!-- Sección de newsletter eliminada -->
+</div>
+
+<div
+  class="overflow-hidden py-[50px] lg:py-[60px] main-footer bg-secondary-dark relative"
+>
+  <div class="container flex flex-col gap-[30px] relative z-[3]">
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:flex xl:justify-between items-start gap-[30px] md:gap-10"
+    >
+      <div
+        class="flex flex-col items-start gap-[30px] md:gap-10 w-full xl:w-[380px]"
+      >
+        <a href="index.html">
+          <img src="../assets/images/Logo.png" alt="logo" class="w-[198px]" />
+        </a>
+
+        <p class="text-body2 text-secondary-white">
+          Raíz Digital es un estudio de diseño web enfocado en emprendedores y pymes. Creamos páginas modernas, rápidas y optimizadas para atraer clientes.
+        </p>
+
+        <div class="flex justify-start items-center gap-4 sm:gap-5">
+          <a
+            href="#"
+            class="size-10 sm:size-[45px] bg-primary-dark hover:bg-secondary-white rounded-full text-secondary-white hover:text-primary-dark text-center transition-all duration-500 ease-linear"
+          >
+            <i class="ri-facebook-circle-fill text-[22px] leading-10 sm:leading-[45px]"></i>
+          </a>
+
+          <a
+            href="https://instagram.com/raizdigital"
+            class="size-10 sm:size-[45px] bg-primary-dark hover:bg-secondary-white rounded-full text-secondary-white hover:text-primary-dark text-center transition-all duration-500 ease-linear"
+          >
+            <i class="ri-instagram-fill text-[22px] leading-10 sm:leading-[45px]"></i>
+          </a>
+
+          <a
+            href="#"
+            class="size-10 sm:size-[45px] bg-primary-dark hover:bg-secondary-white rounded-full text-secondary-white hover:text-primary-dark text-center transition-all duration-500 ease-linear"
+          >
+            <i class="ri-twitter-x-line text-[22px] leading-10 sm:leading-[45px]"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-6 sm:gap-[30px]">
+        <h5 class="text-[24px] leading-8 font-bold text-secondary-white">
+          Contacto
+        </h5>
+        <div class="flex flex-col gap-[10px] sm:gap-5 items-start">
+          <div
+            class="flex justify-start items-center gap-[5px] cursor-pointer text-secondary-white hover:text-primary-dark transition-all duration-500 ease-linear"
+          >
+            <i class="ri-map-pin-fill text-body1"></i>
+            <p class="text-body2 xl:w-[218px]">
+              Catamarca, Argentina
+            </p>
+          </div>
+          <div
+            class="flex justify-start items-center gap-[5px] cursor-pointer text-secondary-white hover:text-primary-dark transition-all duration-500 ease-linear"
+          >
+            <i class="ri-mail-fill text-body1"></i>
+            <p class="text-body2">contacto@raizdigital.com</p>
+          </div>
+          <div
+            class="flex justify-start items-center gap-[5px] cursor-pointer text-secondary-white hover:text-primary-dark transition-all duration-500 ease-linear"
+          >
+            <i class="ri-phone-fill text-body1"></i>
+            <p class="text-body2">+54 9 383 499-1628</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-6 sm:gap-[30px]">
+        <h5 class="text-[24px] leading-8 font-bold text-secondary-white">
+          Enlaces útiles
+        </h5>
+        <div class="flex flex-col gap-[10px] sm:gap-5 items-start">
+          <a
+            href="index.html"
+            class="inline-flex justify-start items-center gap-4 group footer-link"
+          >
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 17 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M7.20332 0.0589569C5.47576 0.340429 3.92194 1.10997 2.67615 2.30113C1.10006 3.80807 0.226197 5.6277 0.0295391 7.81216C-0.129428 9.57741 0.359991 11.5483 1.33441 13.0674C4.0851 17.3557 9.91392 18.2978 13.8792 15.0952C15.5532 13.7432 16.6437 11.7771 16.9595 9.54156C16.9983 9.26723 17.0098 8.78475 16.9915 8.20635C16.9475 6.81886 16.7233 5.92253 16.1097 4.68161C15.6822 3.81716 15.2192 3.174 14.5196 2.47312C13.2951 1.24632 11.9382 0.516215 10.128 0.110003C9.59895 -0.00867642 7.81011 -0.0399513 7.20332 0.0589569ZM12.2729 6.05343C11.158 4.93976 10.7714 4.58485 10.5822 4.50125C10.3159 4.3836 9.74474 4.32644 9.49419 4.39238C9.00744 4.52046 8.6109 4.84414 8.38994 5.29364C8.24759 5.58318 8.22682 5.68425 8.20077 6.2136L8.17154 6.80834L6.19199 6.82338C4.21884 6.83843 4.21161 6.83889 3.98162 6.96086C3.57026 7.17901 3.37733 7.36825 3.20139 7.72614C3.05094 8.03221 3.03294 8.11556 3.03294 8.50642C3.03294 8.91196 3.04639 8.96845 3.21648 9.27781C3.33792 9.49873 3.48534 9.67652 3.65236 9.80362C4.10219 10.146 4.13885 10.1508 6.26511 10.1508H8.17133L8.2002 10.7381C8.23472 11.4394 8.3783 11.8281 8.7191 12.1427C9.08037 12.4761 9.37584 12.5902 9.87879 12.5902C10.5846 12.5902 10.6446 12.548 12.2894 10.8985C13.9094 9.27375 14.0039 9.14054 14.0023 8.48182C14.0007 7.81046 13.9238 7.70252 12.2729 6.05343Z"
+                class="fill-secondary-white group-hover:fill-primary-dark transition-all duration-500 ease-linear"
+              />
+            </svg>
+            <p
+              class="text-body2 text-secondary-white group-hover:text-primary-dark transition-all duration-500 ease-linear"
+            >
+              Inicio
+            </p>
+          </a>
+
+          <a
+            href="abouts.html"
+            class="inline-flex justify-start items-center gap-4 group footer-link"
+          >
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 17 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M7.20332 0.0589569C5.47576 0.340429 3.92194 1.10997 2.67615 2.30113C1.10006 3.80807 0.226197 5.6277 0.0295391 7.81216C-0.129428 9.57741 0.359991 11.5483 1.33441 13.0674C4.0851 17.3557 9.91392 18.2978 13.8792 15.0952C15.5532 13.7432 16.6437 11.7771 16.9595 9.54156C16.9983 9.26723 17.0098 8.78475 16.9915 8.20635C16.9475 6.81886 16.7233 5.92253 16.1097 4.68161C15.6822 3.81716 15.2192 3.174 14.5196 2.47312C13.2951 1.24632 11.9382 0.516215 10.128 0.110003C9.59895 -0.00867642 7.81011 -0.0399513 7.20332 0.0589569ZM12.2729 6.05343C11.158 4.93976 10.7714 4.58485 10.5822 4.50125C10.3159 4.3836 9.74474 4.32644 9.49419 4.39238C9.00744 4.52046 8.6109 4.84414 8.38994 5.29364C8.24759 5.58318 8.22682 5.68425 8.20077 6.2136L8.17154 6.80834L6.19199 6.82338C4.21884 6.83843 4.21161 6.83889 3.98162 6.96086C3.57026 7.17901 3.37733 7.36825 3.20139 7.72614C3.05094 8.03221 3.03294 8.11556 3.03294 8.50642C3.03294 8.91196 3.04639 8.96845 3.21648 9.27781C3.33792 9.49873 3.48534 9.67652 3.65236 9.80362C4.10219 10.146 4.13885 10.1508 6.26511 10.1508H8.17133L8.2002 10.7381C8.23472 11.4394 8.3783 11.8281 8.7191 12.1427C9.08037 12.4761 9.37584 12.5902 9.87879 12.5902C10.5846 12.5902 10.6446 12.548 12.2894 10.8985C13.9094 9.27375 14.0039 9.14054 14.0023 8.48182C14.0007 7.81046 13.9238 7.70252 12.2729 6.05343Z"
+                class="fill-secondary-white group-hover:fill-primary-dark transition-all duration-500 ease-linear"
+              />
+            </svg>
+            <p
+              class="text-body2 text-secondary-white group-hover:text-primary-dark transition-all duration-500 ease-linear"
+            >
+              Sobre mí
+            </p>
+          </a>
+
+          <a
+            href="service.html"
+            class="inline-flex justify-start items-center gap-4 group footer-link"
+          >
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 17 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M7.20332 0.0589569C5.47576 0.340429 3.92194 1.10997 2.67615 2.30113C1.10006 3.80807 0.226197 5.6277 0.0295391 7.81216C-0.129428 9.57741 0.359991 11.5483 1.33441 13.0674C4.0851 17.3557 9.91392 18.2978 13.8792 15.0952C15.5532 13.7432 16.6437 11.7771 16.9595 9.54156C16.9983 9.26723 17.0098 8.78475 16.9915 8.20635C16.9475 6.81886 16.7233 5.92253 16.1097 4.68161C15.6822 3.81716 15.2192 3.174 14.5196 2.47312C13.2951 1.24632 11.9382 0.516215 10.128 0.110003C9.59895 -0.00867642 7.81011 -0.0399513 7.20332 0.0589569ZM12.2729 6.05343C11.158 4.93976 10.7714 4.58485 10.5822 4.50125C10.3159 4.3836 9.74474 4.32644 9.49419 4.39238C9.00744 4.52046 8.6109 4.84414 8.38994 5.29364C8.24759 5.58318 8.22682 5.68425 8.20077 6.2136L8.17154 6.80834L6.19199 6.82338C4.21884 6.83843 4.21161 6.83889 3.98162 6.96086C3.57026 7.17901 3.37733 7.36825 3.20139 7.72614C3.05094 8.03221 3.03294 8.11556 3.03294 8.50642C3.03294 8.91196 3.04639 8.96845 3.21648 9.27781C3.33792 9.49873 3.48534 9.67652 3.65236 9.80362C4.10219 10.146 4.13885 10.1508 6.26511 10.1508H8.17133L8.2002 10.7381C8.23472 11.4394 8.3783 11.8281 8.7191 12.1427C9.08037 12.4761 9.37584 12.5902 9.87879 12.5902C10.5846 12.5902 10.6446 12.548 12.2894 10.8985C13.9094 9.27375 14.0039 9.14054 14.0023 8.48182C14.0007 7.81046 13.9238 7.70252 12.2729 6.05343Z"
+                class="fill-secondary-white group-hover:fill-primary-dark transition-all duration-500 ease-linear"
+              />
+            </svg>
+            <p
+              class="text-body2 text-secondary-white group-hover:text-primary-dark transition-all duration-500 ease-linear"
+            >
+              Servicios
+            </p>
+          </a>
+
+        
+          <a
+            href="team.html"
+            class="inline-flex justify-start items-center gap-4 group footer-link"
+          >
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 17 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M7.20332 0.0589569C5.47576 0.340429 3.92194 1.10997 2.67615 2.30113C1.10006 3.80807 0.226197 5.6277 0.0295391 7.81216C-0.129428 9.57741 0.359991 11.5483 1.33441 13.0674C4.0851 17.3557 9.91392 18.2978 13.8792 15.0952C15.5532 13.7432 16.6437 11.7771 16.9595 9.54156C16.9983 9.26723 17.0098 8.78475 16.9915 8.20635C16.9475 6.81886 16.7233 5.92253 16.1097 4.68161C15.6822 3.81716 15.2192 3.174 14.5196 2.47312C13.2951 1.24632 11.9382 0.516215 10.128 0.110003C9.59895 -0.00867642 7.81011 -0.0399513 7.20332 0.0589569ZM12.2729 6.05343C11.158 4.93976 10.7714 4.58485 10.5822 4.50125C10.3159 4.3836 9.74474 4.32644 9.49419 4.39238C9.00744 4.52046 8.6109 4.84414 8.38994 5.29364C8.24759 5.58318 8.22682 5.68425 8.20077 6.2136L8.17154 6.80834L6.19199 6.82338C4.21884 6.83843 4.21161 6.83889 3.98162 6.96086C3.57026 7.17901 3.37733 7.36825 3.20139 7.72614C3.05094 8.03221 3.03294 8.11556 3.03294 8.50642C3.03294 8.91196 3.04639 8.96845 3.21648 9.27781C3.33792 9.49873 3.48534 9.67652 3.65236 9.80362C4.10219 10.146 4.13885 10.1508 6.26511 10.1508H8.17133L8.2002 10.7381C8.23472 11.4394 8.3783 11.8281 8.7191 12.1427C9.08037 12.4761 9.37584 12.5902 9.87879 12.5902C10.5846 12.5902 10.6446 12.548 12.2894 10.8985C13.9094 9.27375 14.0039 9.14054 14.0023 8.48182C14.0007 7.81046 13.9238 7.70252 12.2729 6.05343Z"
+                class="fill-secondary-white group-hover:fill-primary-dark transition-all duration-500 ease-linear"
+              />
+            </svg>
+            <p
+              class="text-body2 text-secondary-white group-hover:text-primary-dark transition-all duration-500 ease-linear"
+            >
+              Proceso
+            </p>
+          </a>
+
+          <a
+            href="contact.html"
+            class="inline-flex justify-start items-center gap-4 group footer-link"
+          >
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 17 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M7.20332 0.0589569C5.47576 0.340429 3.92194 1.10997 2.67615 2.30113C1.10006 3.80807 0.226197 5.6277 0.0295391 7.81216C-0.129428 9.57741 0.359991 11.5483 1.33441 13.0674C4.0851 17.3557 9.91392 18.2978 13.8792 15.0952C15.5532 13.7432 16.6437 11.7771 16.9595 9.54156C16.9983 9.26723 17.0098 8.78475 16.9915 8.20635C16.9475 6.81886 16.7233 5.92253 16.1097 4.68161C15.6822 3.81716 15.2192 3.174 14.5196 2.47312C13.2951 1.24632 11.9382 0.516215 10.128 0.110003C9.59895 -0.00867642 7.81011 -0.0399513 7.20332 0.0589569ZM12.2729 6.05343C11.158 4.93976 10.7714 4.58485 10.5822 4.50125C10.3159 4.3836 9.74474 4.32644 9.49419 4.39238C9.00744 4.52046 8.6109 4.84414 8.38994 5.29364C8.24759 5.58318 8.22682 5.68425 8.20077 6.2136L8.17154 6.80834L6.19199 6.82338C4.21884 6.83843 4.21161 6.83889 3.98162 6.96086C3.57026 7.17901 3.37733 7.36825 3.20139 7.72614C3.05094 8.03221 3.03294 8.11556 3.03294 8.50642C3.03294 8.91196 3.04639 8.96845 3.21648 9.27781C3.33792 9.49873 3.48534 9.67652 3.65236 9.80362C4.10219 10.146 4.13885 10.1508 6.26511 10.1508H8.17133L8.2002 10.7381C8.23472 11.4394 8.3783 11.8281 8.7191 12.1427C9.08037 12.4761 9.37584 12.5902 9.87879 12.5902C10.5846 12.5902 10.6446 12.548 12.2894 10.8985C13.9094 9.27375 14.0039 9.14054 14.0023 8.48182C14.0007 7.81046 13.9238 7.70252 12.2729 6.05343Z"
+                class="fill-secondary-white group-hover:fill-primary-dark transition-all duration-500 ease-linear"
+              />
+            </svg>
+            <p
+              class="text-body2 text-secondary-white group-hover:text-primary-dark transition-all duration-500 ease-linear"
+            >
+              Contacto
+            </p>
+          </a>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-6 sm:gap-[30px] w-[280px] lg:w-auto">
+        <h5 class="text-[24px] leading-8 font-bold text-secondary-white">
+          Trabajos recientes
+        </h5>
+
+        <div class="grid grid-cols-3 items-center gap-[10px] sm:gap-5">
+          <a
+            href="../assets/images/gallery1.png"
+            class="glightbox overflow-hidden"
+            data-gallery="mygallery"
+          >
+            <img
+              src="../assets/images/gallery1.png"
+              alt="Gallery"
+              class="hover:scale-110 transition-all duration-500 ease-linear w-full"
+            />
+          </a>
+
+          <a
+            href="../assets/images/gallery2.png"
+            class="glightbox overflow-hidden"
+            data-gallery="mygallery"
+          >
+            <img
+              src="../assets/images/gallery2.png"
+              alt="Gallery"
+              class="hover:scale-110 transition-all duration-500 ease-linear w-full"
+            />
+          </a>
+
+          <a
+            href="../assets/images/gallery3.png"
+            class="glightbox overflow-hidden"
+            data-gallery="mygallery"
+          >
+            <img
+              src="../assets/images/gallery3.png"
+              alt="Gallery"
+              class="hover:scale-110 transition-all duration-500 ease-linear w-full"
+            />
+          </a>
+
+          <a
+            href="../assets/images/gallery4.png"
+            class="glightbox overflow-hidden"
+            data-gallery="mygallery"
+          >
+            <img
+              src="../assets/images/gallery4.png"
+              alt="Gallery"
+              class="hover:scale-110 transition-all duration-500 ease-linear w-full"
+            />
+          </a>
+
+          <a
+            href="../assets/images/gallery5.png"
+            class="glightbox overflow-hidden"
+            data-gallery="mygallery"
+          >
+            <img
+              src="../assets/images/gallery5.png"
+              alt="Gallery"
+              class="hover:scale-110 transition-all duration-500 ease-linear w-full"
+            />
+          </a>
+
+          <a
+            href="../assets/images/gallery6.png"
+            class="glightbox overflow-hidden"
+            data-gallery="mygallery"
+          >
+            <img
+              src="../assets/images/gallery6.png"
+              alt="Gallery"
+              class="hover:scale-110 transition-all duration-500 ease-linear w-full"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <img src="../assets/images/bgvectore.png" alt="vectore" class="absolute top-0 bottom-0 left-0 right-0 w-full h-full z-[2]">
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    let currentPage = window.location.pathname.split("/").pop();
+    currentPage = currentPage.split("?")[0].split("#")[0];
+
+    const navLinks = document.querySelectorAll(".footer-link");
+
+    navLinks.forEach((link) => {
+      const linkPage = link.getAttribute("href");
+
+      const icon = link.querySelector("path");
+      const text = link.querySelector("p");
+
+      if (linkPage === currentPage) {
+        if (icon) {
+          icon.classList.remove("fill-secondary-white");
+          icon.classList.add("fill-primary-dark");
+        }
+        if (text) {
+          text.classList.remove("text-secondary-white");
+          text.classList.add("text-primary-dark", "font-semibold");
+        }
+      } else {
+        if (icon) {
+          icon.classList.add("fill-secondary-white");
+          icon.classList.remove("fill-primary-dark");
+        }
+        if (text) {
+          text.classList.add("text-secondary-white");
+          text.classList.remove("text-secondary-dark", "font-semibold");
+        }
+      }
+    });
+  });
+</script>
+ <!-- Back to top -->
+<button id="to-top-button" onclick="goToTop()" title="Go To Top" class="hidden fixed z-50 bottom-5 right-5">
+  <span
+    class="h-10 w-10 flex items-center justify-center text-primary-dark border-primary-dark border-[3px] rounded-full">
+    <i class="ri-arrow-up-line text-bodyColor text-xl"></i>
+  </span>
+</button> <!-- loader js -->
+
+
+
+
+
+<!-- Include Alpine.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+
+<!-- preline js -->
+
+<script src="https://cdn.jsdelivr.net/npm/preline@latest/dist/preline.js"></script>
+
+<!-- main js -->
+
+
+
+
+
+<!-- swiper js  -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+<!-- aos  -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<!-- glightbox  -->
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+<!-- magic cursoe  -->
+<script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js"></script>
+
+<!-- particles  -->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+
+
+
+
+<script>
+
+  document.addEventListener('DOMContentLoaded', function () {
+    if (typeof HSStaticMethods !== 'undefined') {
+      HSStaticMethods.autoInit();
+    }
+  });
+
+  const lightbox = GLightbox({
+    selector: '.glightbox'
+  });
+
+
+
+  
+</script>
+
+
+
+    
   </body>
 </html>

@@ -1,11 +1,216 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth" data-mode="light" dir="ltr">
   <head>
-    {{> partials/title-meta title=" Services Detail" }} {{> partials/head-css }}
+    <meta charset="utf-8" />
+<title> Services Detail | NexIT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta content="IT Service" name="description" />
+<meta content="override" name="NexIT" />
+<!-- favicon -->
+<link rel="shortcut icon" href="./assets/favicon-1549f672.svg" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" />
+
+<!-- swiper  -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<!-- aos  -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+<!-- glight  -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+
+ <!-- icon css -->
+
+
+<!-- Tailwind CSS -->
+
+    <script type="module" crossorigin src="./assets/main-119bb667.js"></script>
+    <link rel="stylesheet" href="./assets/main-390daa27.css">
+    <link rel="stylesheet" href="./assets/tailwind-a85738c2.css">
   </head>
 
   <body class="overflow-hidden">
-    {{> partials/header}} {{> partials/loader}}
+    <header class="overflow-x-hidden w-full">
+  <nav
+    data-aos="fade-down"
+    data-aos-duration="700"
+    id="mainNav"
+    class="left-0 right-0 fixed top-0 z-20 w-full bg-[#000000] bg-opacity-0   "
+  >
+    <div
+      id="siteHeader"
+      class="flex py-0 lg:py-0 justify-between items-center container w-full"
+    >
+      <a href="index.html">
+        <img
+          class="w-[198px] max-w-full"
+          src="./assets/Logo-d1156617.png"
+          alt="logo"
+        />
+      </a>
+
+      <ul class="hidden lg:flex justify-center gap-[30px] items-center">
+        <li class="relative group">
+          <div class="flex py-[38px] items-center justify-center gap-[5px] cursor-pointer">
+            <a href="index.html" class="capitalize text-body2 font-normal text-secondary-white group-hover:text-primary-light transition-all duration-300 ease-in-out">Home</a>
+          </div>
+        </li>
+        <li class="relative group">
+          <div class="flex py-[38px] items-center justify-center gap-[5px] cursor-pointer">
+            <a href="#" class="capitalize text-body2 font-normal text-secondary-white group-hover:text-primary-light transition-all duration-300 ease-in-out">Servicios</a>
+            <i class="ri-arrow-down-s-line capitalize text-body2 text-secondary-white group-hover:text-primary-light transition-all duration-300 ease-in-out"></i>
+          </div>
+          <ul class="absolute left-0 w-[180px] bg-primary-light shadow-lg max-h-0 overflow-hidden transition-all duration-700 ease-in-out group-hover:max-h-[500px]">
+            <li class="py-[10px] px-5 bg-secondary-white hover:bg-secondary-black text-secondary-black hover:text-secondary-white border-b border-secondary-black transition-all duration-300 ease-linear">
+              <a class="block font-normal text-body2 nav-link" href="service.html">Servicios</a>
+            </li>
+            <li class="py-[10px] px-5 bg-secondary-white hover:bg-secondary-black text-secondary-black hover:text-secondary-white border-b border-secondary-black transition-all duration-300 ease-linear">
+              <a class="block font-normal text-body2 nav-link" href="serviceDetail.html">Detalle de servicio</a>
+            </li>
+          </ul>
+        </li>
+        <li class="relative group">
+          <div class="inline-flex py-[38px]">
+            <a href="index.html#precios" class="capitalize text-body2 font-normal text-secondary-white group-hover:text-primary-light transition-all duration-300 ease-in-out">Precios</a>
+          </div>
+        </li>
+        <li class="relative group">
+          <div class="inline-flex py-[38px]">
+            <a href="protfolio.html" class="capitalize text-body2 font-normal text-secondary-white group-hover:text-primary-light transition-all duration-300 ease-in-out">Portfolio</a>
+          </div>
+        </li>
+        <li class="relative group">
+          <div class="inline-flex py-[38px]">
+            <a href="abouts.html" class="capitalize text-body2 font-normal text-secondary-white group-hover:text-primary-light transition-all duration-300 ease-in-out">Sobre mí</a>
+          </div>
+        </li>
+        <!-- Botón blanco Contacto eliminado -->
+      </ul>
+
+      <div class="flex justify-end gap-[10px]">
+        <div class="hidden xl:inline-flex justify-end items-center gap-[10px]">
+        <i class="ri-phone-fill text-[22px] leading-[23px] p-[10px] rounded-[70px] bg-primary-dark text-secondary-white "></i>   
+        <div class="">
+          <p class="text-body3 text-secondary-white">Call Us</p>
+          <p class="text-body1 text-secondary-white">+(321) 9124244559</p>
+        </div>       
+        </div>
+
+        <button id="menu-toggle" class="block lg:hidden">
+          <i
+            id="menu-icon"
+            class="text-[25px] text-secondary-white font-semibold ri-menu-3-line"
+          ></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- <div
+    id="overlay"
+    class="fixed inset-0 bg-primary-dark bg-opacity-70 z-[998] hidden"
+  ></div> -->
+
+  <div
+    id="mobile-menu"
+    class="lg:hidden fixed top-0 right-0 w-[100%] sm:w-[50%] h-screen bg-secondary-dark  z-[999] px-6 py-10 transition-transform duration-300 ease-linear transform translate-x-full overflow-x-hidden"
+  >
+    <div class="flex flex-col gap-10">
+      <div class="flex justify-between items-center">
+        <img
+          src="../assets/images/Logo.png"
+          alt="logo"
+          class="w-[198px]   "
+        />
+        <i
+          id="close-icon"
+          class="text-[28px] text-secondary-white block font-semibold ri-close-line text-right"
+        ></i>
+      </div>
+      <div class="relative flex flex-col items-center gap-[10px]">
+        <!-- Nuevo menú móvil igual al navbar de escritorio -->
+        <div class="relative w-full">
+          <a href="index.html" class="flex justify-start items-center pb-2 transition-all duration-300 ease-in text-body1 font-normal text-secondary-white border-b border-secondary-white w-full">Home</a>
+        </div>
+        <div class="relative w-full">
+          <div class="pb-2 dropdown-btn flex group justify-between items-center border-b border-secondary-white">
+            <button class="flex justify-start items-center transition-all duration-300 ease-in text-body1 font-normal text-secondary-white w-full">Servicios</button>
+            <i class="ri-add-line text-body1 text-secondary-white font-semibold"></i>
+          </div>
+          <div class="max-h-0 overflow-hidden flex flex-col gap-2 py-0 opacity-0 pl-4 transform -translate-y-4 transition-all duration-300 ease-in-out">
+            <a href="service.html" class="block pb-2 text-body1 font-normal text-secondary-white border-b border-secondary-white">Servicios</a>
+            <a href="serviceDetail.html" class="block pb-2 text-body1 font-normal text-secondary-white border-b border-secondary-white">Detalle de servicio</a>
+          </div>
+        </div>
+        <div class="relative w-full">
+          <a href="index.html#precios" class="flex justify-start items-center pb-2 transition-all duration-300 ease-in text-body1 font-normal text-secondary-white border-b border-secondary-white w-full">Precios</a>
+        </div>
+        <div class="relative w-full">
+          <a href="protfolio.html" class="flex justify-start items-center pb-2 transition-all duration-300 ease-in text-body1 font-normal text-secondary-white border-b border-secondary-white w-full">Portfolio</a>
+        </div>
+        <div class="relative w-full">
+          <a href="abouts.html" class="flex justify-start items-center pb-2 transition-all duration-300 ease-in text-body1 font-normal text-secondary-white border-b border-secondary-white w-full">Sobre mí</a>
+        </div>
+        <div class="relative w-full">
+          <a href="contact.html" class="flex justify-start items-center pb-2 transition-all duration-300 ease-in text-body1 font-normal text-secondary-white border-b border-secondary-white w-full">Contacto</a>
+        </div>
+        <div data-aos="fade-up" class="flex justify-start items-center mt-2 sm:mt-5 xl:mt-[50px]">
+          <a href="contact.html" class="flex justify-center items-center gap-[10px] theme-btn2 relative py-2 xl:py-[10px] px-5 xl:px-[22px] rounded-[30px] text-primary-dark transition-all duration-500 ease-linear bg-secondary-white w-full">
+            <p class="text-body3 md:text-body2 xl:text-body1 font-medium">Contacto</p>
+            <svg class="w-[14px] md:w-[16px] xl:w-[18px] h-[14px] md:h-[16px] xl:h-[18px]" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.682724 4.97469C2.08646 2.21852 4.98256 0.284124 8.0528 0.0519076C8.38097 0.0271321 8.69909 0.00392863 8.7598 0.000397033C8.82051 -0.00313456 9.17517 0.0172919 9.54793 0.0458163C13.9025 0.379199 17.3318 3.58904 17.9531 7.91329C18.0498 8.58658 17.9895 10.1486 17.8404 10.8308C17.5793 12.0257 17.0025 13.3252 16.3091 14.2809C15.8282 14.9438 14.8652 15.891 14.1961 16.3593C13.2031 17.0544 11.9161 17.607 10.6639 17.8762C10.1548 17.9856 9.93361 18.0006 8.84258 18C7.67617 17.9993 7.56083 17.99 6.94285 17.8467C5.06927 17.4124 3.71697 16.6811 2.41109 15.396C1.38724 14.3886 0.745634 13.418 0.273141 12.1619C0.166346 11.878 0.0619137 11.5662 0.0409961 11.4689L0.00303078 11.2919L4.29863 11.3059L8.59423 11.3198L8.62182 13.3844L8.64942 15.449L11.8919 12.2617C13.6753 10.5086 15.1344 9.05379 15.1344 9.02874C15.1344 9.00364 13.6691 7.54079 11.8781 5.77787L8.62182 2.5726V4.65064V6.72869H4.31095H0L0.0379654 6.57928C0.11424 6.27931 0.472886 5.38674 0.682724 4.97469Z" class="fill-primary-dark"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const currentPage = window.location.pathname.split("/").pop();
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    navLinks.forEach((link) => {
+      const linkPage = link.getAttribute("href");
+
+      if (linkPage === currentPage) {
+        // Add active styles
+        link.classList.add("text-primary-dark");
+      }
+    });
+  });
+
+
+  window.addEventListener("scroll", function () {
+  const nav = document.getElementById("mainNav");
+
+  if (window.scrollY > 400) {
+    nav.classList.add("bg-opacity-100");
+  } else {
+    nav.classList.remove("bg-opacity-100");
+  }
+});
+</script>
+ <div
+  class="loader fixed top-0 left-0 w-full h-full flex items-center justify-center z-[900] bg-secondary-black bg-opacity-60 backdrop-blur-xl  overflow-hidden   ">
+
+<!-- From Uiverse.io by Z4drus --> 
+<div class="container-loader">
+  <div class="slice"></div>
+  <div class="slice"></div>
+  <div class="slice"></div>
+  <div class="slice"></div>
+  <div class="slice"></div>
+  <div class="slice"></div>
+</div>
+
+
+</div>
 
     <div
       class="bg-[url('/assets/images/breadcrum.png')] bg-top bg-cover bg-no-repeat pt-[160px] sm:pt-[190px] md:pt-[230px] lg:pt-[250px] 2xl:pt-[279px] pb-[85px] sm:pb-[115px] md:pb-[150px] lg:pb-[160px] 2xl:pb-[179px] overflow-hidden"
@@ -29,7 +234,7 @@
               Home
             </p>
           </a>
-          <img src="./assets/images/renderBtn.svg"  alt="render" />
+          <img src="./assets/renderBtn-d4fc8deb.svg"  alt="render" />
           <a
             href="service.html"
             class="text-body2 sm:text-body1 text-secondary-white"
@@ -40,7 +245,7 @@
               Services
             </p>
           </a>
-          <img src="./assets/images/renderBtn.svg"  alt="render" />
+          <img src="./assets/renderBtn-d4fc8deb.svg"  alt="render" />
           <a
             href="serviceDetail.html"
             class="text-body2 sm:text-body1 text-secondary-white"
@@ -222,7 +427,7 @@
             class="bg-[url('/assets/images/servicedetsil2.png')] bg-center bg-cover bg-no-repeat p-5 sm:p-[30px] rounded-[20px] flex flex-col justify-center items-center"
           >
             <img
-              src="assets/images/contacticon.svg"
+              src="./assets/contacticon-e10da330.svg"
               alt="icon"
               class="mx-auto w-[50px] sm:w-auto"
             />
@@ -250,7 +455,7 @@
 
       <div class="w-full xl:w-[69%] flex flex-col gap-[30px]">
         <img
-          src="./assets/images/servicedetsil1.png"
+          src="./assets/servicedetsil1-b9e25d47.png"
           alt="detail"
           class="w-full"
         />
@@ -282,7 +487,7 @@
           class="py-[10px] px-3 sm:px-5 border-l-2 border-primary-dark flex flex-col sm:flex-row justify-start items-start gap-3 sm:gap-5 bg-[#5F2DEE33]"
         >
           <img
-            src="assets/images/light.svg"
+            src="./assets/light-188cce7d.svg"
             alt="light"
             class="tetx-[21px] leading-[30px]"
           />
@@ -330,19 +535,19 @@
           <div class="grid grid-cols-1 md:grid-cols-2 gap-[10px] sm:gap-[15px] md:gap-0">
             <div class="flex flex-col gap-[10px] sm:gap-[15px]">
               <div class="flex justify-start gap-[10px] items-center">
-                <img src="assets/images/check.svg" alt="check" />
+                <img src="./assets/check-5d0c69f2.svg" alt="check" />
                 <p class="text-body2 sm:text-body1 text-secondary-black font-medium">
                   Build Your Employer Brand
                 </p>
               </div>
               <div class="flex justify-start gap-[10px] items-center">
-                <img src="assets/images/check.svg" alt="check" />
+                <img src="./assets/check-5d0c69f2.svg" alt="check" />
                 <p class="text-body2 sm:text-body1 text-secondary-black font-medium">
                   Branding Strategy Grow Your Business
                 </p>
               </div>
               <div class="flex justify-start gap-[10px] items-center">
-                <img src="assets/images/check.svg" alt="check" />
+                <img src="./assets/check-5d0c69f2.svg" alt="check" />
                 <p class="text-body2 sm:text-body1 text-secondary-black font-medium">
                   Strategic Technology Planning
                 </p>
@@ -350,19 +555,19 @@
             </div>
             <div class="flex flex-col gap-[10px] sm:gap-[15px]">
               <div class="flex justify-start gap-[10px] items-center">
-                <img src="assets/images/check.svg" alt="check" />
+                <img src="./assets/check-5d0c69f2.svg" alt="check" />
                 <p class="text-body2 sm:text-body1 text-secondary-black font-medium">
                   Security Assessment & Implementation
                 </p>
               </div>
               <div class="flex justify-start gap-[10px] items-center">
-                <img src="assets/images/check.svg" alt="check" />
+                <img src="./assets/check-5d0c69f2.svg" alt="check" />
                 <p class="text-body2 sm:text-body1 text-secondary-black font-medium">
                   Performance Optimization
                 </p>
               </div>
               <div class="flex justify-start gap-[10px] items-center">
-                <img src="assets/images/check.svg" alt="check" />
+                <img src="./assets/check-5d0c69f2.svg" alt="check" />
                 <p class="text-body2 sm:text-body1 text-secondary-black font-medium">
                   Digital Transformation
                 </p>
@@ -447,7 +652,398 @@
       </div>
     </div>
 
-    {{>partials/footer}} {{> partials/back-to-top}} {{>
-    partials/vendor-scripts}}
+    <!-- Sección de newsletter eliminada -->
+</div>
+
+<div
+  class="overflow-hidden py-[50px] lg:py-[60px] main-footer bg-secondary-dark relative"
+>
+  <div class="container flex flex-col gap-[30px] relative z-[3]">
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:flex xl:justify-between items-start gap-[30px] md:gap-10"
+    >
+      <div
+        class="flex flex-col items-start gap-[30px] md:gap-10 w-full xl:w-[380px]"
+      >
+        <a href="index.html">
+          <img src="../assets/images/Logo.png" alt="logo" class="w-[198px]" />
+        </a>
+
+        <p class="text-body2 text-secondary-white">
+          Raíz Digital es un estudio de diseño web enfocado en emprendedores y pymes. Creamos páginas modernas, rápidas y optimizadas para atraer clientes.
+        </p>
+
+        <div class="flex justify-start items-center gap-4 sm:gap-5">
+          <a
+            href="#"
+            class="size-10 sm:size-[45px] bg-primary-dark hover:bg-secondary-white rounded-full text-secondary-white hover:text-primary-dark text-center transition-all duration-500 ease-linear"
+          >
+            <i class="ri-facebook-circle-fill text-[22px] leading-10 sm:leading-[45px]"></i>
+          </a>
+
+          <a
+            href="https://instagram.com/raizdigital"
+            class="size-10 sm:size-[45px] bg-primary-dark hover:bg-secondary-white rounded-full text-secondary-white hover:text-primary-dark text-center transition-all duration-500 ease-linear"
+          >
+            <i class="ri-instagram-fill text-[22px] leading-10 sm:leading-[45px]"></i>
+          </a>
+
+          <a
+            href="#"
+            class="size-10 sm:size-[45px] bg-primary-dark hover:bg-secondary-white rounded-full text-secondary-white hover:text-primary-dark text-center transition-all duration-500 ease-linear"
+          >
+            <i class="ri-twitter-x-line text-[22px] leading-10 sm:leading-[45px]"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-6 sm:gap-[30px]">
+        <h5 class="text-[24px] leading-8 font-bold text-secondary-white">
+          Contacto
+        </h5>
+        <div class="flex flex-col gap-[10px] sm:gap-5 items-start">
+          <div
+            class="flex justify-start items-center gap-[5px] cursor-pointer text-secondary-white hover:text-primary-dark transition-all duration-500 ease-linear"
+          >
+            <i class="ri-map-pin-fill text-body1"></i>
+            <p class="text-body2 xl:w-[218px]">
+              Catamarca, Argentina
+            </p>
+          </div>
+          <div
+            class="flex justify-start items-center gap-[5px] cursor-pointer text-secondary-white hover:text-primary-dark transition-all duration-500 ease-linear"
+          >
+            <i class="ri-mail-fill text-body1"></i>
+            <p class="text-body2">contacto@raizdigital.com</p>
+          </div>
+          <div
+            class="flex justify-start items-center gap-[5px] cursor-pointer text-secondary-white hover:text-primary-dark transition-all duration-500 ease-linear"
+          >
+            <i class="ri-phone-fill text-body1"></i>
+            <p class="text-body2">+54 9 383 499-1628</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-6 sm:gap-[30px]">
+        <h5 class="text-[24px] leading-8 font-bold text-secondary-white">
+          Enlaces útiles
+        </h5>
+        <div class="flex flex-col gap-[10px] sm:gap-5 items-start">
+          <a
+            href="index.html"
+            class="inline-flex justify-start items-center gap-4 group footer-link"
+          >
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 17 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M7.20332 0.0589569C5.47576 0.340429 3.92194 1.10997 2.67615 2.30113C1.10006 3.80807 0.226197 5.6277 0.0295391 7.81216C-0.129428 9.57741 0.359991 11.5483 1.33441 13.0674C4.0851 17.3557 9.91392 18.2978 13.8792 15.0952C15.5532 13.7432 16.6437 11.7771 16.9595 9.54156C16.9983 9.26723 17.0098 8.78475 16.9915 8.20635C16.9475 6.81886 16.7233 5.92253 16.1097 4.68161C15.6822 3.81716 15.2192 3.174 14.5196 2.47312C13.2951 1.24632 11.9382 0.516215 10.128 0.110003C9.59895 -0.00867642 7.81011 -0.0399513 7.20332 0.0589569ZM12.2729 6.05343C11.158 4.93976 10.7714 4.58485 10.5822 4.50125C10.3159 4.3836 9.74474 4.32644 9.49419 4.39238C9.00744 4.52046 8.6109 4.84414 8.38994 5.29364C8.24759 5.58318 8.22682 5.68425 8.20077 6.2136L8.17154 6.80834L6.19199 6.82338C4.21884 6.83843 4.21161 6.83889 3.98162 6.96086C3.57026 7.17901 3.37733 7.36825 3.20139 7.72614C3.05094 8.03221 3.03294 8.11556 3.03294 8.50642C3.03294 8.91196 3.04639 8.96845 3.21648 9.27781C3.33792 9.49873 3.48534 9.67652 3.65236 9.80362C4.10219 10.146 4.13885 10.1508 6.26511 10.1508H8.17133L8.2002 10.7381C8.23472 11.4394 8.3783 11.8281 8.7191 12.1427C9.08037 12.4761 9.37584 12.5902 9.87879 12.5902C10.5846 12.5902 10.6446 12.548 12.2894 10.8985C13.9094 9.27375 14.0039 9.14054 14.0023 8.48182C14.0007 7.81046 13.9238 7.70252 12.2729 6.05343Z"
+                class="fill-secondary-white group-hover:fill-primary-dark transition-all duration-500 ease-linear"
+              />
+            </svg>
+            <p
+              class="text-body2 text-secondary-white group-hover:text-primary-dark transition-all duration-500 ease-linear"
+            >
+              Inicio
+            </p>
+          </a>
+
+          <a
+            href="abouts.html"
+            class="inline-flex justify-start items-center gap-4 group footer-link"
+          >
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 17 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M7.20332 0.0589569C5.47576 0.340429 3.92194 1.10997 2.67615 2.30113C1.10006 3.80807 0.226197 5.6277 0.0295391 7.81216C-0.129428 9.57741 0.359991 11.5483 1.33441 13.0674C4.0851 17.3557 9.91392 18.2978 13.8792 15.0952C15.5532 13.7432 16.6437 11.7771 16.9595 9.54156C16.9983 9.26723 17.0098 8.78475 16.9915 8.20635C16.9475 6.81886 16.7233 5.92253 16.1097 4.68161C15.6822 3.81716 15.2192 3.174 14.5196 2.47312C13.2951 1.24632 11.9382 0.516215 10.128 0.110003C9.59895 -0.00867642 7.81011 -0.0399513 7.20332 0.0589569ZM12.2729 6.05343C11.158 4.93976 10.7714 4.58485 10.5822 4.50125C10.3159 4.3836 9.74474 4.32644 9.49419 4.39238C9.00744 4.52046 8.6109 4.84414 8.38994 5.29364C8.24759 5.58318 8.22682 5.68425 8.20077 6.2136L8.17154 6.80834L6.19199 6.82338C4.21884 6.83843 4.21161 6.83889 3.98162 6.96086C3.57026 7.17901 3.37733 7.36825 3.20139 7.72614C3.05094 8.03221 3.03294 8.11556 3.03294 8.50642C3.03294 8.91196 3.04639 8.96845 3.21648 9.27781C3.33792 9.49873 3.48534 9.67652 3.65236 9.80362C4.10219 10.146 4.13885 10.1508 6.26511 10.1508H8.17133L8.2002 10.7381C8.23472 11.4394 8.3783 11.8281 8.7191 12.1427C9.08037 12.4761 9.37584 12.5902 9.87879 12.5902C10.5846 12.5902 10.6446 12.548 12.2894 10.8985C13.9094 9.27375 14.0039 9.14054 14.0023 8.48182C14.0007 7.81046 13.9238 7.70252 12.2729 6.05343Z"
+                class="fill-secondary-white group-hover:fill-primary-dark transition-all duration-500 ease-linear"
+              />
+            </svg>
+            <p
+              class="text-body2 text-secondary-white group-hover:text-primary-dark transition-all duration-500 ease-linear"
+            >
+              Sobre mí
+            </p>
+          </a>
+
+          <a
+            href="service.html"
+            class="inline-flex justify-start items-center gap-4 group footer-link"
+          >
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 17 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M7.20332 0.0589569C5.47576 0.340429 3.92194 1.10997 2.67615 2.30113C1.10006 3.80807 0.226197 5.6277 0.0295391 7.81216C-0.129428 9.57741 0.359991 11.5483 1.33441 13.0674C4.0851 17.3557 9.91392 18.2978 13.8792 15.0952C15.5532 13.7432 16.6437 11.7771 16.9595 9.54156C16.9983 9.26723 17.0098 8.78475 16.9915 8.20635C16.9475 6.81886 16.7233 5.92253 16.1097 4.68161C15.6822 3.81716 15.2192 3.174 14.5196 2.47312C13.2951 1.24632 11.9382 0.516215 10.128 0.110003C9.59895 -0.00867642 7.81011 -0.0399513 7.20332 0.0589569ZM12.2729 6.05343C11.158 4.93976 10.7714 4.58485 10.5822 4.50125C10.3159 4.3836 9.74474 4.32644 9.49419 4.39238C9.00744 4.52046 8.6109 4.84414 8.38994 5.29364C8.24759 5.58318 8.22682 5.68425 8.20077 6.2136L8.17154 6.80834L6.19199 6.82338C4.21884 6.83843 4.21161 6.83889 3.98162 6.96086C3.57026 7.17901 3.37733 7.36825 3.20139 7.72614C3.05094 8.03221 3.03294 8.11556 3.03294 8.50642C3.03294 8.91196 3.04639 8.96845 3.21648 9.27781C3.33792 9.49873 3.48534 9.67652 3.65236 9.80362C4.10219 10.146 4.13885 10.1508 6.26511 10.1508H8.17133L8.2002 10.7381C8.23472 11.4394 8.3783 11.8281 8.7191 12.1427C9.08037 12.4761 9.37584 12.5902 9.87879 12.5902C10.5846 12.5902 10.6446 12.548 12.2894 10.8985C13.9094 9.27375 14.0039 9.14054 14.0023 8.48182C14.0007 7.81046 13.9238 7.70252 12.2729 6.05343Z"
+                class="fill-secondary-white group-hover:fill-primary-dark transition-all duration-500 ease-linear"
+              />
+            </svg>
+            <p
+              class="text-body2 text-secondary-white group-hover:text-primary-dark transition-all duration-500 ease-linear"
+            >
+              Servicios
+            </p>
+          </a>
+
+        
+          <a
+            href="team.html"
+            class="inline-flex justify-start items-center gap-4 group footer-link"
+          >
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 17 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M7.20332 0.0589569C5.47576 0.340429 3.92194 1.10997 2.67615 2.30113C1.10006 3.80807 0.226197 5.6277 0.0295391 7.81216C-0.129428 9.57741 0.359991 11.5483 1.33441 13.0674C4.0851 17.3557 9.91392 18.2978 13.8792 15.0952C15.5532 13.7432 16.6437 11.7771 16.9595 9.54156C16.9983 9.26723 17.0098 8.78475 16.9915 8.20635C16.9475 6.81886 16.7233 5.92253 16.1097 4.68161C15.6822 3.81716 15.2192 3.174 14.5196 2.47312C13.2951 1.24632 11.9382 0.516215 10.128 0.110003C9.59895 -0.00867642 7.81011 -0.0399513 7.20332 0.0589569ZM12.2729 6.05343C11.158 4.93976 10.7714 4.58485 10.5822 4.50125C10.3159 4.3836 9.74474 4.32644 9.49419 4.39238C9.00744 4.52046 8.6109 4.84414 8.38994 5.29364C8.24759 5.58318 8.22682 5.68425 8.20077 6.2136L8.17154 6.80834L6.19199 6.82338C4.21884 6.83843 4.21161 6.83889 3.98162 6.96086C3.57026 7.17901 3.37733 7.36825 3.20139 7.72614C3.05094 8.03221 3.03294 8.11556 3.03294 8.50642C3.03294 8.91196 3.04639 8.96845 3.21648 9.27781C3.33792 9.49873 3.48534 9.67652 3.65236 9.80362C4.10219 10.146 4.13885 10.1508 6.26511 10.1508H8.17133L8.2002 10.7381C8.23472 11.4394 8.3783 11.8281 8.7191 12.1427C9.08037 12.4761 9.37584 12.5902 9.87879 12.5902C10.5846 12.5902 10.6446 12.548 12.2894 10.8985C13.9094 9.27375 14.0039 9.14054 14.0023 8.48182C14.0007 7.81046 13.9238 7.70252 12.2729 6.05343Z"
+                class="fill-secondary-white group-hover:fill-primary-dark transition-all duration-500 ease-linear"
+              />
+            </svg>
+            <p
+              class="text-body2 text-secondary-white group-hover:text-primary-dark transition-all duration-500 ease-linear"
+            >
+              Proceso
+            </p>
+          </a>
+
+          <a
+            href="contact.html"
+            class="inline-flex justify-start items-center gap-4 group footer-link"
+          >
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 17 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M7.20332 0.0589569C5.47576 0.340429 3.92194 1.10997 2.67615 2.30113C1.10006 3.80807 0.226197 5.6277 0.0295391 7.81216C-0.129428 9.57741 0.359991 11.5483 1.33441 13.0674C4.0851 17.3557 9.91392 18.2978 13.8792 15.0952C15.5532 13.7432 16.6437 11.7771 16.9595 9.54156C16.9983 9.26723 17.0098 8.78475 16.9915 8.20635C16.9475 6.81886 16.7233 5.92253 16.1097 4.68161C15.6822 3.81716 15.2192 3.174 14.5196 2.47312C13.2951 1.24632 11.9382 0.516215 10.128 0.110003C9.59895 -0.00867642 7.81011 -0.0399513 7.20332 0.0589569ZM12.2729 6.05343C11.158 4.93976 10.7714 4.58485 10.5822 4.50125C10.3159 4.3836 9.74474 4.32644 9.49419 4.39238C9.00744 4.52046 8.6109 4.84414 8.38994 5.29364C8.24759 5.58318 8.22682 5.68425 8.20077 6.2136L8.17154 6.80834L6.19199 6.82338C4.21884 6.83843 4.21161 6.83889 3.98162 6.96086C3.57026 7.17901 3.37733 7.36825 3.20139 7.72614C3.05094 8.03221 3.03294 8.11556 3.03294 8.50642C3.03294 8.91196 3.04639 8.96845 3.21648 9.27781C3.33792 9.49873 3.48534 9.67652 3.65236 9.80362C4.10219 10.146 4.13885 10.1508 6.26511 10.1508H8.17133L8.2002 10.7381C8.23472 11.4394 8.3783 11.8281 8.7191 12.1427C9.08037 12.4761 9.37584 12.5902 9.87879 12.5902C10.5846 12.5902 10.6446 12.548 12.2894 10.8985C13.9094 9.27375 14.0039 9.14054 14.0023 8.48182C14.0007 7.81046 13.9238 7.70252 12.2729 6.05343Z"
+                class="fill-secondary-white group-hover:fill-primary-dark transition-all duration-500 ease-linear"
+              />
+            </svg>
+            <p
+              class="text-body2 text-secondary-white group-hover:text-primary-dark transition-all duration-500 ease-linear"
+            >
+              Contacto
+            </p>
+          </a>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-6 sm:gap-[30px] w-[280px] lg:w-auto">
+        <h5 class="text-[24px] leading-8 font-bold text-secondary-white">
+          Trabajos recientes
+        </h5>
+
+        <div class="grid grid-cols-3 items-center gap-[10px] sm:gap-5">
+          <a
+            href="../assets/images/gallery1.png"
+            class="glightbox overflow-hidden"
+            data-gallery="mygallery"
+          >
+            <img
+              src="../assets/images/gallery1.png"
+              alt="Gallery"
+              class="hover:scale-110 transition-all duration-500 ease-linear w-full"
+            />
+          </a>
+
+          <a
+            href="../assets/images/gallery2.png"
+            class="glightbox overflow-hidden"
+            data-gallery="mygallery"
+          >
+            <img
+              src="../assets/images/gallery2.png"
+              alt="Gallery"
+              class="hover:scale-110 transition-all duration-500 ease-linear w-full"
+            />
+          </a>
+
+          <a
+            href="../assets/images/gallery3.png"
+            class="glightbox overflow-hidden"
+            data-gallery="mygallery"
+          >
+            <img
+              src="../assets/images/gallery3.png"
+              alt="Gallery"
+              class="hover:scale-110 transition-all duration-500 ease-linear w-full"
+            />
+          </a>
+
+          <a
+            href="../assets/images/gallery4.png"
+            class="glightbox overflow-hidden"
+            data-gallery="mygallery"
+          >
+            <img
+              src="../assets/images/gallery4.png"
+              alt="Gallery"
+              class="hover:scale-110 transition-all duration-500 ease-linear w-full"
+            />
+          </a>
+
+          <a
+            href="../assets/images/gallery5.png"
+            class="glightbox overflow-hidden"
+            data-gallery="mygallery"
+          >
+            <img
+              src="../assets/images/gallery5.png"
+              alt="Gallery"
+              class="hover:scale-110 transition-all duration-500 ease-linear w-full"
+            />
+          </a>
+
+          <a
+            href="../assets/images/gallery6.png"
+            class="glightbox overflow-hidden"
+            data-gallery="mygallery"
+          >
+            <img
+              src="../assets/images/gallery6.png"
+              alt="Gallery"
+              class="hover:scale-110 transition-all duration-500 ease-linear w-full"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <img src="../assets/images/bgvectore.png" alt="vectore" class="absolute top-0 bottom-0 left-0 right-0 w-full h-full z-[2]">
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    let currentPage = window.location.pathname.split("/").pop();
+    currentPage = currentPage.split("?")[0].split("#")[0];
+
+    const navLinks = document.querySelectorAll(".footer-link");
+
+    navLinks.forEach((link) => {
+      const linkPage = link.getAttribute("href");
+
+      const icon = link.querySelector("path");
+      const text = link.querySelector("p");
+
+      if (linkPage === currentPage) {
+        if (icon) {
+          icon.classList.remove("fill-secondary-white");
+          icon.classList.add("fill-primary-dark");
+        }
+        if (text) {
+          text.classList.remove("text-secondary-white");
+          text.classList.add("text-primary-dark", "font-semibold");
+        }
+      } else {
+        if (icon) {
+          icon.classList.add("fill-secondary-white");
+          icon.classList.remove("fill-primary-dark");
+        }
+        if (text) {
+          text.classList.add("text-secondary-white");
+          text.classList.remove("text-secondary-dark", "font-semibold");
+        }
+      }
+    });
+  });
+</script>
+ <!-- Back to top -->
+<button id="to-top-button" onclick="goToTop()" title="Go To Top" class="hidden fixed z-50 bottom-5 right-5">
+  <span
+    class="h-10 w-10 flex items-center justify-center text-primary-dark border-primary-dark border-[3px] rounded-full">
+    <i class="ri-arrow-up-line text-bodyColor text-xl"></i>
+  </span>
+</button> <!-- loader js -->
+
+
+
+
+
+<!-- Include Alpine.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+
+<!-- preline js -->
+
+<script src="https://cdn.jsdelivr.net/npm/preline@latest/dist/preline.js"></script>
+
+<!-- main js -->
+
+
+
+
+
+<!-- swiper js  -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+<!-- aos  -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<!-- glightbox  -->
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+<!-- magic cursoe  -->
+<script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js"></script>
+
+<!-- particles  -->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+
+
+
+
+<script>
+
+  document.addEventListener('DOMContentLoaded', function () {
+    if (typeof HSStaticMethods !== 'undefined') {
+      HSStaticMethods.autoInit();
+    }
+  });
+
+  const lightbox = GLightbox({
+    selector: '.glightbox'
+  });
+
+
+
+  
+</script>
+
+
+
   </body>
 </html>

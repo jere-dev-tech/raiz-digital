@@ -2,7 +2,33 @@
 <html lang="en" class="scroll-smooth" data-mode="light" dir="ltr">
 
 <head>
-  {{> partials/title-meta title="404" }} {{> partials/head-css }}
+  <meta charset="utf-8" />
+<title>404 | NexIT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta content="IT Service" name="description" />
+<meta content="override" name="NexIT" />
+<!-- favicon -->
+<link rel="shortcut icon" href="./assets/favicon-1549f672.svg" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" />
+
+<!-- swiper  -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<!-- aos  -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+<!-- glight  -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+
+ <!-- icon css -->
+
+
+<!-- Tailwind CSS -->
+
+  <link rel="stylesheet" href="./assets/tailwind-a85738c2.css">
 </head>
 
 <body class="overflow-x-hidden">
@@ -41,7 +67,12 @@
     </div>
   </div>
 
-  {{> partials/back-to-top}}
-</body>
+  <!-- Back to top -->
+  <button id="to-top-button" onclick="goToTop()" title="Go To Top" class="hidden fixed z-50 bottom-5 right-5">
+    <span
+      class="h-10 w-10 flex items-center justify-center text-primary-dark border-primary-dark border-[3px] rounded-full">
+      <i class="ri-arrow-up-line text-bodyColor text-xl"></i>
+    </span>
+  </button></body>
 
 </html>
