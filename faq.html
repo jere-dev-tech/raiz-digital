@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth" data-mode="light" dir="ltr">
+  <head>
+    {{> partials/title-meta title="FAQ" }} {{> partials/head-css }}
+  </head>
+
+  <body class="overflow-hidden">
+    {{> partials/header}} {{> partials/loader}}
+
+    <div
+      class="bg-[url('/assets/images/breadcrum.png')] bg-top bg-cover bg-no-repeat pt-[160px] sm:pt-[190px] md:pt-[230px] lg:pt-[250px] 2xl:pt-[279px] pb-[85px] sm:pb-[115px] md:pb-[150px] lg:pb-[160px] 2xl:pb-[179px] overflow-hidden"
+    >
+      <div
+        class="flex flex-col justify-center items-center gap-1 sm:gap-[10px]"
+      >
+        <h2
+         
+          class="text-[30px] sm:text-[40px] lg:text-[44px] leading-[30px] sm:leading-[56px] font-medium text-secondary-white"
+        >
+          FAQ
+        </h2>
+        <div class="flex justify-center items-center gap-[10px]">
+          <a
+            href="index.html"
+            class="text-body2 sm:text-body1 text-secondary-white"
+          >
+            <p
+              class="hover:text-primary-dark transition-all duration-300 ease-linear"
+            >
+              Home
+            </p>
+          </a>
+          <img src="./assets/images/renderBtn.svg"   alt="render" />
+          <a href="#" class="text-body2 sm:text-body1 text-secondary-white">
+            <p
+              class="hover:text-primary-dark transition-all duration-300 ease-linear"
+            >
+              Pages
+            </p>
+          </a>
+          <img src="./assets/images/renderBtn.svg"   alt="render" />
+          <a
+            href="team.html"
+            class="text-body2 sm:text-body1 text-secondary-white"
+          >
+            <p
+              class="hover:text-primary-dark transition-all duration-300 ease-linear"
+            >
+              Faq
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="container py-[70px] sm:py-[80px] xl:py-[100px] grid grid-cols-1 xl:grid-cols-2 gap-5 overflow-hidden"
+    >
+      <div class="hs-accordion-group flex flex-col gap-[15px] sm:gap-[20px]">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1200"
+          class="hs-accordion active border border-primary-dark rounded-[15px] sm:rounded-[30px]"
+          id="hs-basic-with-title-and-arrow-stretched-heading-one"
+        >
+          <button
+            class="hs-accordion-toggle inline-flex items-center text-left gap-2 sm:gap-0 justify-between w-full rounded-[15px] sm:rounded-[30px] py-[10px] sm:py-[15px] px-[10px] sm:px-5 text-body1 font-medium text-secondary-black hs-accordion-active:text-secondary-white hs-accordion-active:bg-primary-dark hs-accordion-active:rounded-bl-none hs-accordion-active:rounded-br-none"
+            aria-expanded="true"
+            aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-one"
+          >
+            What types of IT solutions do you offer?
+
+            <i
+              class="hs-accordion-active:block hidden ri-arrow-down-s-line py-[13px] px-[7px] rounded-full text-[18px] leading-[6px] bg-secondary-white text-primary-dark"
+            ></i>
+
+            <i
+              class="hs-accordion-active:hidden block ri-arrow-right-s-line py-[13px] px-[7px] rounded-full text-[18px] leading-[6px] bg-primary-dark text-secondary-white"
+            ></i>
+          </button>
+          <div
+            id="hs-basic-with-title-and-arrow-stretched-collapse-one"
+            class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
+            role="region"
+            aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-one"
+          >
+            <p
+              class="text-secondary-black rounded-bl-[30px] rounded-br-[30px] py-[10px] sm:py-[15px] px-[10px] sm:px-5"
+            >
+              Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
+              mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
+              fringilla, mattis ligula consectetur, ultrices mauris. Maecenas
+              vitae mattis tellus..
+            </p>
+          </div>
+        </div>
+
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1200"
+          class="hs-accordion border border-primary-dark rounded-[15px] sm:rounded-[30px]"
+          id="hs-basic-with-title-and-arrow-stretched-heading-two"
+        >
+          <button
+            class="hs-accordion-toggle inline-flex items-center text-left gap-4 sm:gap-0 justify-between w-full rounded-[15px] sm:rounded-[30px] py-[10px] sm:py-[15px] px-[10px] sm:px-5 text-body1 font-medium text-secondary-black hs-accordion-active:text-secondary-white hs-accordion-active:bg-primary-dark hs-accordion-active:rounded-bl-none hs-accordion-active:rounded-br-none"
+            aria-expanded="true"
+            aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-two"
+          >
+            How can I request a free consultation for my business?
+
+            <i
+              class="hs-accordion-active:block hidden ri-arrow-down-s-line py-[13px] px-[7px] rounded-full text-[18px] leading-[6px] bg-secondary-white text-primary-dark"
+            ></i>
+
+            <i
+              class="hs-accordion-active:hidden block ri-arrow-right-s-line py-[13px] px-[7px] rounded-full text-[18px] leading-[6px] bg-primary-dark text-secondary-white"
+            ></i>
+          </button>
+          <div
+            id="hs-basic-with-title-and-arrow-stretched-collapse-two"
+            class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+            role="region"
+            aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-two"
+          >
+            <p
+              class="text-secondary-black rounded-bl-[30px] rounded-br-[30px] py-[10px] sm:py-[15px] px-[10px] sm:px-5"
+            >
+              Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
+              mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
+              fringilla, mattis ligula consectetur, ultrices mauris. Maecenas
+              vitae mattis tellus..
+            </p>
+          </div>
+        </div>
+
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1200"
+          class="hs-accordion border border-primary-dark rounded-[15px] sm:rounded-[30px]"
+          id="hs-basic-with-title-and-arrow-stretched-heading-three"
+        >
+          <button
+            class="hs-accordion-toggle inline-flex items-center text-left gap-2 sm:gap-0 justify-between w-full rounded-[15px] sm:rounded-[30px] py-[10px] sm:py-[15px] px-[10px] sm:px-5 text-body1 font-medium text-secondary-black hs-accordion-active:text-secondary-white hs-accordion-active:bg-primary-dark hs-accordion-active:rounded-bl-none hs-accordion-active:rounded-br-none"
+            aria-expanded="true"
+            aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-three"
+          >
+            What industries do you specialize in supporting?
+
+            <i
+              class="hs-accordion-active:block hidden ri-arrow-down-s-line py-[13px] px-[7px] rounded-full text-[18px] leading-[6px] bg-secondary-white text-primary-dark"
+            ></i>
+
+            <i
+              class="hs-accordion-active:hidden block ri-arrow-right-s-line py-[13px] px-[7px] rounded-full text-[18px] leading-[6px] bg-primary-dark text-secondary-white"
+            ></i>
+          </button>
+          <div
+            id="hs-basic-with-title-and-arrow-stretched-collapse-three"
+            class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+            role="region"
+            aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-three"
+          >
+            <p
+              class="text-secondary-black rounded-bl-[30px] rounded-br-[30px] py-[10px] sm:py-[15px] px-[10px] sm:px-5"
+            >
+              Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
+              mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
+              fringilla, mattis ligula consectetur, ultrices mauris. Maecenas
+              vitae mattis tellus..
+            </p>
+          </div>
+        </div>
+
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1200"
+          class="hs-accordion border border-primary-dark rounded-[15px] sm:rounded-[30px]"
+          id="hs-basic-with-title-and-arrow-stretched-heading-four"
+        >
+          <button
+            class="hs-accordion-toggle inline-flex items-center text-left gap-2 sm:gap-0 justify-between w-full rounded-[15px] sm:rounded-[30px] py-[10px] sm:py-[15px] px-[10px] sm:px-5 text-body1 font-medium text-secondary-black hs-accordion-active:text-secondary-white hs-accordion-active:bg-primary-dark hs-accordion-active:rounded-bl-none hs-accordion-active:rounded-br-none"
+            aria-expanded="true"
+            aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-four"
+          >
+            Can you customize IT solutions for unique business needs?
+
+            <i
+              class="hs-accordion-active:block hidden ri-arrow-down-s-line py-[13px] px-[7px] rounded-full text-[18px] leading-[6px] bg-secondary-white text-primary-dark"
+            ></i>
+
+            <i
+              class="hs-accordion-active:hidden block ri-arrow-right-s-line py-[13px] px-[7px] rounded-full text-[18px] leading-[6px] bg-primary-dark text-secondary-white"
+            ></i>
+          </button>
+          <div
+            id="hs-basic-with-title-and-arrow-stretched-collapse-four"
+            class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+            role="region"
+            aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-four"
+          >
+            <p
+              class="text-secondary-black rounded-bl-[30px] rounded-br-[30px] py-[10px] sm:py-[15px] px-[10px] sm:px-5"
+            >
+              Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
+              mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
+              fringilla, mattis ligula consectetur, ultrices mauris. Maecenas
+              vitae mattis tellus..
+            </p>
+          </div>
+        </div>
+
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1200"
+          class="hs-accordion border border-primary-dark rounded-[15px] sm:rounded-[30px]"
+          id="hs-basic-with-title-and-arrow-stretched-heading-five"
+        >
+          <button
+            class="hs-accordion-toggle inline-flex items-center text-left gap-2 sm:gap-0 justify-between w-full rounded-[15px] sm:rounded-[30px] py-[10px] sm:py-[15px] px-[10px] sm:px-5 text-body1 font-medium text-secondary-black hs-accordion-active:text-secondary-white hs-accordion-active:bg-primary-dark hs-accordion-active:rounded-bl-none hs-accordion-active:rounded-br-none"
+            aria-expanded="true"
+            aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-five"
+          >
+            How quickly can your team respond to support requests?
+
+            <i
+              class="hs-accordion-active:block hidden ri-arrow-down-s-line py-[13px] px-[7px] rounded-full text-[18px] leading-[6px] bg-secondary-white text-primary-dark"
+            ></i>
+
+            <i
+              class="hs-accordion-active:hidden block ri-arrow-right-s-line py-[13px] px-[7px] rounded-full text-[18px] leading-[6px] bg-primary-dark text-secondary-white"
+            ></i>
+          </button>
+          <div
+            id="hs-basic-with-title-and-arrow-stretched-collapse-five"
+            class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+            role="region"
+            aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-five"
+          >
+            <p
+              class="text-secondary-black rounded-bl-[30px] rounded-br-[30px] py-[10px] sm:py-[15px] px-[10px] sm:px-5"
+            >
+              Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
+              mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
+              fringilla, mattis ligula consectetur, ultrices mauris. Maecenas
+              vitae mattis tellus..
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./assets/images/faq.png"
+        alt="faq"
+        class="hidden xl:block w-full "
+      />
+    </div>
+
+    {{>partials/footer}} {{> partials/back-to-top}} {{>
+    partials/vendor-scripts}}
+  </body>
+</html>

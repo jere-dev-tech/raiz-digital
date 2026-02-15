@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth" data-mode="light" dir="ltr">
+  <head>
+    {{> partials/title-meta title="About" }} {{> partials/head-css }}
+  </head>
+
+  <body class="overflow-hidden">
+    {{> partials/header}} {{> partials/loader}}
+
+    <div
+      class="bg-[url('/assets/images/breadcrum.png')] bg-top bg-cover bg-no-repeat pt-[160px] sm:pt-[190px] md:pt-[230px] lg:pt-[250px] 2xl:pt-[279px] pb-[85px] sm:pb-[115px] md:pb-[150px] lg:pb-[160px] 2xl:pb-[179px] overflow-hidden"
+    >
+      <div
+        class="flex flex-col justify-center items-center gap-1 sm:gap-[10px]"
+      >
+        <h2
+         
+          class="text-[30px] sm:text-[40px] lg:text-[44px] leading-[30px] sm:leading-[56px] font-bold text-secondary-white"
+        >
+          About Us
+        </h2>
+        <div class="flex justify-center items-center gap-[10px]">
+          <a
+            href="index.html"
+            class="text-body2 sm:text-body1 text-secondary-white"
+          >
+            <p class="hover:text-primary-dark transition-all duration-300 ease-linear">Home</p>
+          </a>
+          <img src="./assets/images/renderBtn.svg"  alt="render" />
+          <a
+            href="abouts.html"
+            class="text-body2 sm:text-body1 text-secondary-white"
+          >
+            <p class="hover:text-primary-dark transition-all duration-300 ease-linear">About Us</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+{{> partials/about}} 
+{{> partials/choose}}
+{{> partials/work}}
+ {{> partials/weare}}
+  {{> partials/testimonial}} 
+  <div class=" pb-[70px] md:pb-[80px] xl:pb-[100px]">
+    {{> partials/infinitelogo}}
+  </div>
+
+    {{>partials/footer}} {{> partials/back-to-top}} {{>
+    partials/vendor-scripts}}
+  </body>
+</html>

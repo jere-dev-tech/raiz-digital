@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth" data-mode="light" dir="ltr">
+  <head>
+    {{> partials/title-meta title="Contact" }} {{> partials/head-css }}
+  </head>
+
+  <body class="overflow-x-hidden">
+    {{> partials/header}} {{> partials/loader}}
+
+    <div
+      class="bg-[url('/assets/images/breadcrum.png')] bg-top bg-cover bg-no-repeat pt-[160px] sm:pt-[190px] md:pt-[230px] lg:pt-[250px] 2xl:pt-[279px] pb-[85px] sm:pb-[115px] md:pb-[150px] lg:pb-[160px] 2xl:pb-[179px] overflow-hidden"
+    >
+      <div
+        class="flex flex-col justify-center items-center gap-1 sm:gap-[10px]"
+      >
+        <h2
+         
+          class="text-[30px] sm:text-[40px] lg:text-[44px] leading-[30px] sm:leading-[56px] font-bold text-secondary-white"
+        >
+          Contact Us
+        </h2>
+        <div class="flex justify-center items-center gap-[10px]">
+          <a
+            href="index.html"
+            class="text-body2 sm:text-body1 text-secondary-white"
+          >
+            <p
+              class="hover:text-primary-dark transition-all duration-300 ease-linear"
+            >
+              Home
+            </p>
+          </a>
+          <img src="./assets/images/renderBtn.svg"   alt="render" />
+          <a
+            href="contact.html"
+            class="text-body2 sm:text-body1 text-secondary-white"
+          >
+            <p
+              class="hover:text-primary-dark transition-all duration-300 ease-linear"
+            >
+              Contact
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="container py-[70px] sm:py-[80px] xl:py-[100px] flex flex-col gap-[70px] md:gap-[80px] xl:gap-[100px] overflow-hidden"
+    >
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 w-full">
+        <div
+          data-aos="zoom-in"
+          class="flex flex-col justify-start items-start gap-[15px] py-[30px] px-5 bg-secondary-white rounded-[30px] border-2 border-primary-dark hover:bg-primary-dark group transition-colors duration-500 ease-linear w-[288px] md:w-full"
+        >
+          <i
+            class="ri-map-pin-2-fill text-[50px] leading-[50px] text-primary-dark group-hover:text-secondary-white transition-all duration-500 ease-linear"
+          ></i>
+          <div class="flex flex-col gap-[5px]">
+            <h4
+              class="text-[20px] lg:text-[28px] leading-7 lg:leading-9 font-bold text-secondary-black group-hover:text-secondary-white transition-all duration-500 ease-linear"
+            >
+              Our Location
+            </h4>
+            <p
+              class="text-body2 lg:text-body1 text-secondary-black group-hover:text-secondary-white transition-all duration-500 ease-linear"
+            >
+              123 North Tower, New York
+            </p>
+          </div>
+        </div>
+
+        <div
+          data-aos="zoom-in"
+          class="flex flex-col justify-start items-start gap-[15px] py-[30px] px-5 bg-secondary-white rounded-[30px] border-2 border-primary-dark group hover:bg-primary-dark transition-colors duration-500 ease-linear w-[288px] md:w-full"
+        >
+          <i
+            class="ri-phone-fill text-[50px] leading-[50px] text-primary-dark group-hover:text-secondary-white transition-all duration-500 ease-linear"
+          ></i>
+          <div class="flex flex-col gap-[5px]">
+            <h4
+              class="text-[20px] lg:text-[28px] leading-7 lg:leading-9 font-bold text-secondary-black group-hover:text-secondary-white transition-all duration-500 ease-linear"
+            >
+              Phone Number
+            </h4>
+            <p
+              class="text-body2 lg:text-body1 text-secondary-black group-hover:text-secondary-white transition-all duration-500 ease-linear"
+            >
+              +(321) 9124244559
+            </p>
+          </div>
+        </div>
+
+        <div
+          data-aos="zoom-in"
+          class="flex flex-col justify-start items-start gap-[15px] py-[30px] px-5 bg-secondary-white rounded-[30px] border-2 border-primary-dark group hover:bg-primary-dark transition-colors duration-500 ease-linear w-[288px] md:w-full"
+        >
+          <i
+            class="ri-mail-fill text-[50px] leading-[50px] text-primary-dark group-hover:text-secondary-white transition-all duration-500 ease-linear"
+          ></i>
+          <div class="flex flex-col gap-[5px]">
+            <h4
+              class="text-[20px] lg:text-[28px] leading-7 lg:leading-9 font-bold text-secondary-black group-hover:text-secondary-white transition-all duration-500 ease-linear"
+            >
+              Email Address
+            </h4>
+            <p
+              class="text-body2 lg:text-body1 text-secondary-black group-hover:text-secondary-white transition-all duration-500 ease-linear"
+            >
+              NexIT@gmail.com
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="flex justify-center items-start gap-10 lg:gap-5 xl:gap-[50px] flex-col lg:flex-row"
+      >
+        <div class="w-full  flex flex-col  gap-[30px] md:gap-10 xl:gap-[50px] ">
+          <div class="flex flex-col ">
+            <h2
+              class="text-center headline text-[30px] sm:text-[36px] leading-10 sm:leading-[46px] font-bold text-secondary-black"
+            >
+              Have any questions? Let's answer them
+            </h2>
+           
+          </div>
+          <div class="">
+            <form class="space-y-4 sm:space-y-5">
+              <div class="grid md:grid-cols-2 gap-4 sm:gap-5">
+                <div class="relative">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="First Name"
+                    class="w-full py-[10px] md:py-[15px] px-3 md:px-4 rounded-[30px] bg-secondary-white text-secondary-black border-2 border-primary-dark focus:outline-none"
+                  />
+                  <p
+                    class="error-message hidden text-red-500 text-sm mt-2 ml-4"
+                  ></p>
+                </div>
+
+                <div class="relative">
+                  <input
+                    type="text"
+                    name="Last Name"
+                    placeholder="last name"
+                    class="w-full py-[10px] md:py-[15px] px-3 md:px-4 rounded-[30px] bg-secondary-white text-secondary-black border-2 border-primary-dark focus:outline-none"
+                  />
+                  <p
+                    class="error-message hidden text-red-500 text-sm mt-2 ml-4"
+                  ></p>
+                </div>
+              </div>
+
+              <div class="grid md:grid-cols-2 gap-4 sm:gap-5">
+                <div class="relative">
+                  <input
+                    type="text"
+                    name="phone"
+                    placeholder="Phone Number"
+                    class="w-full py-[10px] md:py-[15px] px-3 md:px-4 rounded-[30px] bg-secondary-white text-secondary-black border-2 border-primary-dark focus:outline-none"
+                  />
+                  <p
+                    class="error-message hidden text-red-500 text-sm mt-2 ml-4"
+                  ></p>
+                </div>
+
+                <div class="relative">
+                  <input
+                    type="email"
+                    placeholder="E Mail"
+                    name="email"
+                    class="w-full py-[10px] md:py-[15px] px-3 md:px-4 rounded-[30px] bg-secondary-white text-secondary-black border-2 border-primary-dark focus:outline-none"
+                  />
+                  <p
+                    class="error-message hidden text-red-500 text-sm mt-2 ml-4"
+                  ></p>
+                </div>
+              </div>
+
+              <div class="relative">
+                <textarea
+                  name="message"
+                  placeholder="Write Message"
+                  rows="5"
+                  class="w-full py-[10px] md:py-[15px] px-3 md:px-4 rounded-[30px] bg-secondary-white text-secondary-black border-2 border-primary-dark focus:outline-none"
+                ></textarea>
+                <p
+                  class="error-message hidden text-red-500 text-sm mt-2 ml-4"
+                ></p>
+              </div>
+
+              <button
+                type="submit"
+                class="contact-btn-section inline-flex justify-center items-center capitalize py-[6px] sm:py-[8px] px-[16px] sm:px-[18px] rounded-[40px] bg-primary-dark hover:bg-secondary-black text-subtitle3 sm:text-subtitle2 text-secondary-white font-bold transition-all duration-300 ease-in-out"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <iframe
+      class="w-full h-[500px]"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94410.10512927335!2d-71.05242478519841!3d42.31446294524868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3652d0d3d311b%3A0x787cbf240162e8a0!2sBoston%2C%20MA%2C%20USA!5e0!3m2!1sen!2sin!4v1758884380988!5m2!1sen!2sin"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+
+    {{> partials/footer}} {{> partials/back-to-top}} {{>
+    partials/vendor-scripts}}
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.querySelector("form");
+        const inputs = form.querySelectorAll("input, textarea");
+
+        let successMessageElement = null;
+
+        // Add a container for success message after the form button
+        const successContainer = document.createElement("div");
+        successContainer.className = "success-message-container";
+        form
+          .querySelector(".contact-btn-section")
+          .parentNode.appendChild(successContainer);
+
+        const errorMessages = {
+          name: "Please enter your first name (minimum 2 characters)",
+          "last-name": "Please enter your last name (minimum 2 characters)",
+          phone: "Please enter a valid phone number (10-12 digits)",
+          email: "Please enter a valid email address",
+          message: "Please enter your message (minimum 10 characters)",
+        };
+
+        function showError(input, message) {
+          const errorDiv = input.parentElement.querySelector(".error-message");
+          errorDiv.textContent = message;
+          errorDiv.classList.remove("hidden");
+          input.classList.add("border-red-500");
+          input.classList.remove("border-primary-light");
+        }
+
+        function hideError(input) {
+          const errorDiv = input.parentElement.querySelector(".error-message");
+          errorDiv.classList.add("hidden");
+          input.classList.remove("border-red-500");
+          input.classList.add("border-primary-light");
+        }
+
+        function validateField(input) {
+          let isValid = true;
+
+          switch (input.type) {
+            case "text":
+              if (input.value.length < 2) {
+                showError(input, errorMessages[input.name]);
+                isValid = false;
+              }
+              break;
+            case "email":
+              const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+              if (!emailPattern.test(input.value)) {
+                showError(input, errorMessages.email);
+                isValid = false;
+              }
+              break;
+            case "number":
+              const phonePattern = /^\d{10,12}$/;
+              if (!phonePattern.test(input.value)) {
+                showError(input, errorMessages.phone);
+                isValid = false;
+              }
+              break;
+            case "textarea":
+              if (input.value.length < 10) {
+                showError(input, errorMessages.message);
+                isValid = false;
+              }
+              break;
+          }
+
+          if (isValid) {
+            hideError(input);
+          }
+
+          return isValid;
+        }
+
+        inputs.forEach((input) => {
+          input.addEventListener("blur", () => validateField(input));
+          input.addEventListener("input", () => hideError(input));
+        });
+
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          let isFormValid = true;
+
+          inputs.forEach((input) => {
+            if (!validateField(input)) {
+              isFormValid = false;
+            }
+          });
+
+          if (isFormValid) {
+            // Create success message
+            successMessageElement = document.createElement("div");
+            successMessageElement.className =
+              "bg-green-500 text-white px-2 py-2 md:px-4 md:py-3 rounded-lg shadow-lg transform translate-y-0 opacity-0 transition-all duration-500 flex items-center gap-2";
+            successMessageElement.innerHTML = `
+                <i class="ri-checkbox-circle-line text-xl"></i>
+                <span>Thank you! Your message has been sent.</span>
+            `;
+            // Add success message to container
+            successContainer.appendChild(successMessageElement);
+
+            setTimeout(() => {
+              successMessageElement.classList.add("opacity-100");
+            }, 10);
+
+            // Reset form
+            form.reset();
+
+            // Remove success message after delay
+            setTimeout(() => {
+              if (successMessageElement) {
+                successMessageElement.classList.remove("opacity-100");
+                successMessageElement.classList.add("opacity-0");
+                setTimeout(() => {
+                  if (successMessageElement) {
+                    successMessageElement.remove();
+                    successMessageElement = null;
+                  }
+                }, 500);
+              }
+            }, 3000);
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
