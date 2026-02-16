@@ -198,21 +198,27 @@
   }
 });
 </script>
- <div
+
+<!-- Loader: se oculta automáticamente al cargar la página -->
+<div id="loader"
   class="loader fixed top-0 left-0 w-full h-full flex items-center justify-center z-[900] bg-secondary-black bg-opacity-60 backdrop-blur-xl  overflow-hidden   ">
-
-<!-- From Uiverse.io by Z4drus --> 
-<div class="container-loader">
-  <div class="slice"></div>
-  <div class="slice"></div>
-  <div class="slice"></div>
-  <div class="slice"></div>
-  <div class="slice"></div>
-  <div class="slice"></div>
+  <!-- From Uiverse.io by Z4drus --> 
+  <div class="container-loader">
+    <div class="slice"></div>
+    <div class="slice"></div>
+    <div class="slice"></div>
+    <div class="slice"></div>
+    <div class="slice"></div>
+    <div class="slice"></div>
+  </div>
 </div>
-
-
-</div>
+<script>
+  // Oculta el loader cuando la página termina de cargar
+  window.addEventListener('load', function() {
+    var loader = document.getElementById('loader');
+    if (loader) loader.style.display = 'none';
+  });
+</script>
 
     <div class="relative">
 
